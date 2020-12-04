@@ -1,0 +1,60 @@
+.personalInfo
+{
+    height: 500px;
+    /* background-color:#132e39; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.personalInfo .info
+{
+    width: 500px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.personalInfo .info p {
+    text-transform: none;
+    text-align: left;
+    margin-left: 100px;
+}
+.personalInfo img
+{
+    height: 100%;
+}
+
+
+@media screen and (max-width: 900px)
+{
+    .personalInfo img
+    {
+        display: none;
+    }
+    .personalInfo .info
+    {
+        margin: 0 auto;
+        
+    }
+    .personalInfo .info p
+    {
+        margin-left: 50px;
+
+    }
+}
+@media screen and (max-width: 500px)
+{
+    .personalInfo .info p
+    {
+        margin-left: 30px;
+        font-size: 17px;
+    }
+}
+@media screen and (max-width: 500px)
+{
+    .personalInfo .info p
+    {
+        margin-left: 10px;
+        font-size: 14px;
+    }
+}

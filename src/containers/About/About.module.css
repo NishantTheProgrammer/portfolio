@@ -1,0 +1,201 @@
+.container
+{
+    width: 1060px;
+    margin: 0 auto;
+    color: #EEEEEE;
+    position: static;
+    display: block;
+    top: auto;
+    left: auto;
+    transform: none;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.container h1
+{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-size: 55px;
+    text-align: center;
+    padding: 40px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.container p
+{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 22px;
+    color: #e6e6e6;
+    text-transform: uppercase;
+}
+
+
+
+@media screen and (max-width: 1060px)
+{
+   .container
+   {
+       width: 1000px;
+   }
+   .item iframe
+    {
+        width: 432px !important;
+    }
+    .badge svg
+    {
+        height: 180px;
+        margin-right: 50px;
+    }
+}
+@media screen and (max-width: 1000px)
+{
+   .container
+   {
+       width: 900px;
+   }
+   .item iframe
+    {
+        width: 550px !important;
+    }
+    .item .title
+    {
+        font-size: 28px;
+    }
+    .btn a
+    {
+        padding: 10px 15px;
+    }
+    .badgeTitle
+    {
+        font-size: 30px !important;
+        padding: 20px !important;
+    }
+}
+@media screen and (max-width: 900px)
+{
+    .container
+    {
+        width: 95%;
+    }
+    .personalInfo img
+    {
+        display: none;
+    }
+    .personalInfo .info
+    {
+        margin: 0 auto;
+        
+    }
+    .personalInfo .info p
+    {
+        margin-left: 50px;
+
+    }
+    .badge svg
+    {
+        height: 180px;
+        margin-right: 20px;
+    }
+    .badgeTitle
+    {
+        font-size: 25px !important;
+        padding: 20px !important;
+    }
+}
+@media screen and (max-width: 770px)
+{
+    .badge svg
+    {
+        margin-right: 0;
+    }
+    .badge
+    {
+        flex-direction: column;
+    }
+    #badgeBtn
+    {
+        display: flex;
+        justify-content: center;
+    }
+    a
+    {
+        margin-left: 0 !important;
+    }
+}
+@media screen and (max-width: 600px)
+{
+    .container h1
+    {
+        font-size: 40px;
+    }
+    .container .slogan
+    {
+        font-size: 15px;
+    }
+    .skills .card
+    {
+        height: 53vw;
+        width: 40vw;
+    }
+    h2
+    {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 500px)
+{
+    .personalInfo .info p
+    {
+        margin-left: 30px;
+        font-size: 17px;
+    }
+}
+@media screen and (max-width: 500px)
+{
+    .skills .card
+    {
+        height: 100vw;
+        width: 80vw;
+    } 
+    .education p
+    {
+        font-size: 15px;
+    }   
+    .container h1
+    {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 500px)
+{
+    .container h1
+    {
+        font-size: 30px;
+    }
+    .personalInfo .info p
+    {
+        margin-left: 10px;
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 360px)
+{
+    .badge svg
+    {
+        height: 120px;
+    }
+    .badge
+    {
+        padding: 25px;
+    }
+    .badgeTitle
+    {
+        font-size: 20px !important;
+    }
+}

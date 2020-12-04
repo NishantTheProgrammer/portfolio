@@ -1,0 +1,60 @@
+.nav
+{
+    background-color: #a79f8bbf;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    z-index: 2;
+    font-family: sans-serif;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    flex-direction: column;
+    overflow-y: visible;
+}
+.nav a
+{
+    color: whitesmoke;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 22.5px;
+    height: 0;
+    opacity: 0;
+    pointer-events: none;
+    width: 60px; 
+    font-family: 'Nunito', sans-serif;
+    transition: ease height .3s;
+    font-weight: bold;
+}
+.nav a span
+{
+    transition: ease all .3s;
+    margin-left: 30px;
+    font-size: 20px;
+}
+.nav a:hover
+{
+    color: #ffb400;
+    font-weight: bolder;
+}
+.nav a:hover span
+{
+    margin-left: 35px;
+    font-size: 22px;
+}
+
+#hamburger
+{
+    height: 60px;
+    opacity: 1;
+    pointer-events: all;
+}
+.nav a.open {
+    opacity: 1;
+    height: 60px;
+    pointer-events: all;
+}

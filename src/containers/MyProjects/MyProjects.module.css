@@ -1,0 +1,50 @@
+.container
+{
+    width: 1060px;
+    margin: 0 auto;
+    color: #EEEEEE;
+    position: static;
+    display: block;
+    top: auto;
+    left: auto;
+    transform: none;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.container h1
+{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-size: 55px;
+    text-align: center;
+    padding: 40px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.container p
+{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 22px;
+    color: #e6e6e6;
+    text-transform: uppercase;
+}
+@media screen and (max-width: 1060px){
+    .container {
+        width: 1000px;
+    }
+}
+@media screen and (max-width: 1000px){
+    .container {
+        width: 900px;
+    }
+}
+@media screen and (max-width: 1000px){
+    .container {
+        width: 500px;
+    }
+}

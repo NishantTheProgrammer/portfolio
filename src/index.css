@@ -1,13 +1,74 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@900&display=swap');
+
+
+
+*
+{
+    margin: 0;
+    padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body
+{
+    background-color: #181616;
+    background-repeat: no-repeat;
+}
+
+div.btn
+{
+    padding: 0;
+    margin-top: 20px;
+}
+.btn a
+{
+    text-decoration: none;
+    padding: 15px 20px;
+    color: white;
+    display: block;
+    float: left;
+    margin: 0;
+    border: 2px solid #ffb400;
+    border-radius: 100px;
+    transition: ease all .5s;
+}
+
+.btn a:hover
+{
+    background-color: #ffb400;
+    color: black;
+}
+.demo a
+{
+    position: relative;
+    border-color: #4ad595;
+    margin-left: 20px
+}
+.demo a:hover
+{
+    background-color: #4ad595;
+    color: black;
+    margin-left: 20px;
+}
+
+.fa-twitter:hover
+{
+    color: #1085cf;
+}
+.fa-facebook:hover
+{
+    color: #176ab6;
+}
+.fa-youtube:hover
+{
+    color: #eb1010;
+}
+.fa-instagram:hover
+{
+    color: rgb(182, 13, 98);
+}
+.fa-github:hover
+{
+    color: gray;
 }

@@ -1,0 +1,96 @@
+.badge
+{
+    background-color: #565656;
+    justify-content: flex-start;
+    padding: 50px;
+    border-radius: 25px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+.badge svg
+{
+    height: 200px;
+    margin-right: 50px;
+}
+
+.badgeTitle
+{
+    font-size: 40px !important;
+    font-family: 'Nunito', sans-serif !important;
+    padding: 20px !important;
+}
+
+
+@media screen and (max-width: 1060px)
+{
+    .badge svg
+    {
+        height: 180px;
+        margin-right: 50px;
+    }
+}
+@media screen and (max-width: 1000px)
+{
+    .btn a
+    {
+        padding: 10px 15px;
+    }
+    .badgeTitle
+    {
+        font-size: 30px !important;
+        padding: 20px !important;
+    }
+}
+@media screen and (max-width: 900px)
+{
+    .badge svg
+    {
+        height: 180px;
+        margin-right: 20px;
+    }
+    .badgeTitle
+    {
+        font-size: 25px !important;
+        padding: 20px !important;
+    }
+}
+@media screen and (max-width: 770px)
+{
+    .badge svg
+    {
+        margin-right: 0;
+    }
+    .badge
+    {
+        flex-direction: column;
+    }
+    .btn
+    {
+        display: flex;
+        justify-content: center;
+    }
+    .btn a
+    {
+        margin-left: 0 !important;
+    }
+}
+
+
+@media screen and (max-width: 360px)
+{
+    .badge svg
+    {
+        height: 120px;
+    }
+    .badge
+    {
+        padding: 25px;
+    }
+    .badgeTitle
+    {
+        font-size: 20px !important;
+    }
+}

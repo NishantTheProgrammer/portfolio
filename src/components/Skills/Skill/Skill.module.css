@@ -1,0 +1,56 @@
+.skill
+{
+    background-color: #1d212299;
+    height: 320px;
+    width: 240px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.skill svg
+{
+    width: 150px;
+}
+svg circle
+{
+    fill: none;
+    stroke: yellow;
+    stroke-width: 10;
+    stroke-linecap: round;
+
+    transform: translate(5px, 5px);
+    stroke-dasharray: 220;
+    stroke-dashoffset: 220;
+}
+.skill .skillName
+{
+    font-size: 22px;
+    font-weight: bold;
+}
+.skill .percent
+{
+    position: relative;
+    top: -90px;
+    font-size: 20px;
+}
+.skill .framework
+{
+    background-color: black;
+    border-radius: 20px;
+    font-size: 1.5em;
+    width: 80%;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+.skill .framework i
+{
+    margin: 10px;
+}
+
+.circle {
+    stroke-dasharray: 440
+}

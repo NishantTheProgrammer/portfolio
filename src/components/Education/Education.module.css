@@ -1,0 +1,21 @@
+.education
+{
+    text-align: center;
+}
+.education .p
+{
+    text-transform: none;
+    width: 80%;
+    text-align: justify;
+    margin: 20px auto;
+    font-size: 20px;
+}
+
+
+@media screen and (max-width: 500px)
+{
+    .education .p
+    {
+        font-size: 15px;
+    }   
+}

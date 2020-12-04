@@ -1,0 +1,113 @@
+.item
+{
+    background-color: #2c2c2c;
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.preview
+{
+    width: 400px;
+    height: 225px;
+}
+.item .title
+{
+    text-transform: none;
+    font-size: 30px;
+    padding: 0;
+    text-align: left;
+    color: #ffb400;
+    font-family: 'Nunito', sans-serif !important;
+}
+.item .description
+{
+    color: #e8e8e8;
+    text-align: justify;
+    text-transform: none;
+    font-size: 16px;
+    line-height: 1;
+    margin-top: 10px;
+}
+.item div
+{
+    max-width: 600px;
+    padding: 30px;
+}
+
+.item .btn
+{
+    padding: 0;
+    max-width: 600px;
+}
+.btn a
+{
+    text-decoration: none;
+    padding: 12px 18px;
+    color: white;
+    display: block;
+    float: left;
+    margin: 40px 20px;
+    border: 2px solid #ffb400;
+    border-radius: 100px;
+    transition: ease all .5s;
+    margin: 0;
+    margin-top: 20px;
+}
+.btn a:hover
+{
+    background-color: #ffb400;
+    color: black;
+}
+.demo a
+{
+    position: relative;
+    border-color: #4ad595;
+    margin-left: 20px
+}
+.demo a:hover
+{
+    background-color: #4ad595;
+    color: black;
+    margin-left: 20px;
+}
+@media screen and (max-width: 1000px)
+{
+    .item {
+        flex-direction: column;
+    }
+    .item .title {
+        font-size: 28px;
+    }
+    .btn a {
+        padding: 10px 15px;
+    }
+}
+@media screen and (max-width: 900px)
+{
+    .container
+    {
+        width: 500px;
+    }
+    .item
+    {
+        flex-direction: column;
+    }
+    .preview
+    {
+        width: 100% !important;
+        height: 100%;
+        
+    }
+    .item iframe
+    {
+        height: 280px !important;
+    }
+    .container .slogan
+    {
+        font-size: 15px;
+    }
+    .container h1
+    {
+        font-size: 30px;
+    }
+}
