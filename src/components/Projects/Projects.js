@@ -6,6 +6,15 @@ const projects = props => {
 
     const projectsData = [
         {
+            title: 'ChatThings',
+            media: {
+                type: 'video',                                                   // ['youtube', 'video', 'img']
+                link:'./Media/chatThings.mp4'
+            },
+            description: "I​ t’s a social media application where users can Chat, make friends, listen same music simultaneously, Post, comments and react on post, share stories, play basic multiplayer games like KBC and tic-tac-toe",
+            sourceCode: 'https://github.com/NishantTheProgrammer/ChatThings'
+        },
+        {
             title: 'WebDraw',
             media: {
                 type: 'youtube',                                                   // ['youtube', 'video', 'img']
@@ -14,6 +23,16 @@ const projects = props => {
             description: 'WebDraw is web based drawing tool made with JavaScript (vue.js) which contain all the features related to drawing',
             sourceCode: 'https://github.com/NishantTheProgrammer/WebDraw/',
             hosted: 'https://nishanttheprogrammer.github.io/WebDraw/'
+        },
+        {
+            title: 'ResumeBuilder',
+            media: {
+                type: 'video',                                                   // ['youtube', 'video', 'img']
+                link:'./Media/ResumeBuilder.mp4'
+            },
+            description: "It's a react application for build your resume on the web, which will container some pre made template",
+            sourceCode: 'https://github.com/NishantTheProgrammer/ResumeBuilder',
+            hosted: 'https://resumebuilder.nishanttheprogrammer.com/'
         },
         {
             title: '1GamerPro | Esprots web app',

@@ -23,6 +23,24 @@ const skills = props => {
                 { title: 'Vue JS', icon: 'fab fa-vuejs', color: '#35b741' }
             ]
         },
+        Python: {
+            percent: 85,
+            color: '#4894c3',
+            icon: 'fab fa-python',
+            frameworks: [
+                { title: 'Django', icon: 'fab fa-dyalog', color: 'white' },
+            ]
+        },
+        SQL: {
+            percent: 70,
+            color: '#27efff',
+            icon: 'fas fa-database'
+        },
+        Linux: {
+            percent: 55,
+            color: '#cf7a0a',
+            icon: 'fa fa-linux'
+        },
         PHP: {
             percent: 85,
             color: '#8993be',
@@ -33,21 +51,6 @@ const skills = props => {
             percent: 65,
             color: '#543b79',
             icon: 'fab fa-bootstrap'
-        },
-        SQL: {
-            percent: 70,
-            color: '#27efff',
-            icon: 'fas fa-database'
-        },
-        Linux: {
-            percent: 50,
-            color: '#cf7a0a',
-            icon: 'fa fa-linux'
-        },
-        Python: {
-            percent: 85,
-            color: '#4894c3',
-            icon: 'fab fa-python'
         },
         Java: {
             percent: 80,

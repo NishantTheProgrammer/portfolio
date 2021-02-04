@@ -3,16 +3,16 @@ const { Component } = require("react");
 
 class Role extends Component {
     state = {
-        role: 'Freelancer',
+        role: 'Programmer',
         write: false,
         selected: 0
     }
     componentDidMount() {
         const roles = [
-            "Freelancer",
             "Programmer",
-            "Web Developer",
-            "Game Developer"
+            "React Dev",
+            "Django Dev",
+            "Freelancer",
         ];
         setInterval(() => {
             if(!this.state.write) {

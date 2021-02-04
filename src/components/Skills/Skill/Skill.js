@@ -1,8 +1,6 @@
 import classes from './Skill.module.css';
 
 const skill = props => {
-
-    console.log(props.type, props.framework)
     return (
         <div className={classes.skill}>
             <svg>

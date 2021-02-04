@@ -32,7 +32,7 @@ const personalInfo = props => {
                     )})}
                 </tbody>
             </table>
-            <img src="Nishant.png" alt="Nishant" className={classes.personalInfo}></img>
+            <img src={props.img} alt="Nishant" className={classes.personalInfo}></img>
         </div>
     );
 };
