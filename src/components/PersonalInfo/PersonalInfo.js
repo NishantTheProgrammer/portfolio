@@ -5,10 +5,10 @@ const personalInfo = props => {
         name: "Nishant",
         qualification: "BCA",
         nationality: "Indian",
-        experiance: "No Indrustry Experience",
+        experiance: "1 year",
         phone: "+91 7838716089",
         email: "knishant113@gmail.com",
-        age: "21 Years",
+        age: "22 Years",
         languages: "English, Hindi, Urdu"
     }
 

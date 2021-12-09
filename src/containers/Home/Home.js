@@ -9,12 +9,12 @@ const Home = props => {
             <img src={nishatImage} alt="Nishant" className={classes.profileImage}></img>
             <div className={classes.container}>
                 <h3>Hi, My name is <span style={{color: '#ffb400', fontSize: 23, fontFamily: 'Nunito'}}>Nishant</span></h3>
+                <p><b>Mobile Application developer</b> at <b>Max vision solutions PVT. LTD.</b></p>
                 <h1 style={{fontFamily: 'Nunito'}}>I'm A <Role /></h1>
                 <p>
-                    I'm a Freelance UI/UX Designer and Developer based in Dehli, India.
+                    A curious tech guy with awesome technical skills and great thinking ability
                     I like to build <span style={{color: '#ffb400'}}>logic behind the seens </span>
                     rather than using any ready made tool.
-                    I have also some experience of game development and 3-d modeling.
                 </p>
                 <div className={classes.links}>
                     <div className={classes.socialLinks}>
