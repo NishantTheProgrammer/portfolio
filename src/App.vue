@@ -4,5 +4,8 @@ import HelloWorld from "./components/HelloWorld.vue";
 </script>
 
 <template>
-  <RouterView />
+  <div class="container mx-auto bg-zinc-800 h-screen text-white">
+
+    <RouterView />
+  </div>
 </template>

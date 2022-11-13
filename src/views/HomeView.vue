@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import TheWelcome from "../components/TheWelcome.vue";
+import NavBar from '@/components/NavBar.vue';
+
 </script>
 
 <template>
+  <NavBar></NavBar>
   <main>
-    <h1 class="text-3xl font-bold underline text-red-600">
-      tailwind
-    </h1>
+    <p>home page</p>
   </main>
 </template>
