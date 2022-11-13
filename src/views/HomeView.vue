@@ -4,6 +4,8 @@ import TheWelcome from "../components/TheWelcome.vue";
 
 <template>
   <main>
-    <p>Hello world</p>
+    <h1 class="text-3xl font-bold underline text-red-600">
+      tailwind
+    </h1>
   </main>
 </template>
