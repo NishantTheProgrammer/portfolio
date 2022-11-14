@@ -30,7 +30,7 @@ import Role from '@/components/Role.vue';
         <img src="./../assets/nishant.png" style="filter: drop-shadow(0px 0px 2px black);" alt="Nishant" class="h-full">
       </div>
     </section>
-    <section class="h-screen grid grid-cols-2">
+    <section class="h-screen grid grid-cols-2 p-20">
       <div class="flex flex-col justify-center items-center gap-10 p-20">
         <div class="shadow-md bg-zinc-700 p-10 rounded-xl w-full">
           <h2 class="text-emerald-500 text-3xl font-mono">Front End</h2>
@@ -61,9 +61,9 @@ import Role from '@/components/Role.vue';
           magnam?</p>
       </div>
     </section>
-    <section class="h-screen">
-      <h2 class="px-20 text-4xl">Latest works</h2>
-      <div class="grid grid-cols-2 justify-center items-center gap-10 p-20">
+    <section class="h-screen p-20">
+      <h2 class="text-4xl">Latest works</h2>
+      <div class="grid grid-cols-2 justify-center items-center gap-10 mt-10">
         <ProjectCard></ProjectCard>
         <ProjectCard></ProjectCard>
         <ProjectCard></ProjectCard>
@@ -71,6 +71,33 @@ import Role from '@/components/Role.vue';
           <h2 class="text-emerald-500 text-3xl font-mono">All Projects</h2>
           <p class="text-sm text-gray-400 font-mono text-justify mt-5">* Some projects are not allow to be published by NDA. If you want to see more, <RouterLink to="projects" class="underline text-emerald-400">Contact</RouterLink></p>
           <p class="mt-10 opacity-0">.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="h-screen p-20">
+      <h2 class="text-4xl">Testimonials</h2>
+      <p class="text-sm text-gray-400 font-mono text-justify mt-5">What clients says about me</p>
+      <div class="shadow-md bg-zinc-900  px-28 py-16 rounded-xl w-full mt-10">
+        <h3 class="text-sm text-gray-400 font-mono text-justify mt-5">***** 5 star rating</h3>
+        <h2 class="text-justify italic text-xl font-mono mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet illum nam iusto dolore similique optio provident cum quibusdam quas veniam repellendus laudantium nostrum facere id velit distinctio non, delectus eos quasi voluptates, adipisci assumenda inventore reiciendis exercitationem! Exercitationem blanditiis veniam saepe doloribus velit vitae voluptatem ea! Praesentium officia id, quod, atque molestias nobis doloribus nulla sequi eius iste debitis ex quas voluptatibus ad at nesciunt magnam cum. Voluptates, fugiat asperiores.</h2>
+      </div>
+      <div class="grid grid-cols-4 justify-center items-center gap-2 mt-20">
+        <div class="shadow-md border-b-emerald-300 border-b p-10w-full">
+          <h2 class="text-xl font-mono">User 1</h2>
+          <p class="text-sm text-gray-400 font-mono text-justify mt-2 pb-3">Reviewer position</p>
+        </div>
+        <div class="shadow-md border-b-zinc-600 border-b p-10w-full">
+          <h2 class="text-xl font-mono">User 2</h2>
+          <p class="text-sm text-gray-400 font-mono text-justify mt-2 pb-3">Reviewer position</p>
+        </div>
+        <div class="shadow-md border-b-zinc-600 border-b p-10w-full">
+          <h2 class="text-xl font-mono">User 3</h2>
+          <p class="text-sm text-gray-400 font-mono text-justify mt-2 pb-3">Reviewer position</p>
+        </div>
+        <div class="shadow-md border-b-zinc-600 border-b p-10w-full">
+          <h2 class="text-xl font-mono">User 4</h2>
+          <p class="text-sm text-gray-400 font-mono text-justify mt-2 pb-3">Reviewer position</p>
         </div>
       </div>
     </section>
