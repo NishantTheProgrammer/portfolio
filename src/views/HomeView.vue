@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import NavBar from '@/components/NavBar.vue';
+import ProjectCard from '@/components/ProjectCard.vue';
 import Role from '@/components/Role.vue';
 </script>
 
@@ -51,13 +52,26 @@ import Role from '@/components/Role.vue';
       <div class="flex justify-center  flex-col gap-10 p-20">
         <p class="text-sm text-gray-400 font-mono">Introduction</p>
         <h2 class="text-4xl font-mono">Hello! I'm Nishant</h2>
-        <p class="text-xl">Every flsfjls</p>
+        <p class="text-xl italic">Every flsfjls</p>
         <p class="text-sm text-gray-400 font-mono text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing
           elit.
           Exercitationem voluptates in aut quam nesciunt eum amet inventore earum incidunt eligendi obcaecati labore
           molestiae, consequuntur quo, sunt aliquam modi eveniet possimus adipisci magni id porro. Tempora eligendi eos
           iste consectetur, eius magni voluptatum quibusdam sed! Expedita quaerat obcaecati nobis aliquid
           magnam?</p>
+      </div>
+    </section>
+    <section class="h-screen">
+      <h2 class="px-20 text-4xl">Latest works</h2>
+      <div class="grid grid-cols-2 justify-center items-center gap-10 p-20">
+        <ProjectCard></ProjectCard>
+        <ProjectCard></ProjectCard>
+        <ProjectCard></ProjectCard>
+        <div class="shadow-md border-emerald-300 border p-10 rounded-xl w-full">
+          <h2 class="text-emerald-500 text-3xl font-mono">All Projects</h2>
+          <p class="text-sm text-gray-400 font-mono text-justify mt-5">* Some projects are not allow to be published by NDA. If you want to see more, <RouterLink to="projects" class="underline text-emerald-400">Contact</RouterLink></p>
+          <p class="mt-10 opacity-0">.</p>
+        </div>
       </div>
     </section>
   </main>
