@@ -32,7 +32,7 @@ import Role from '@/components/Role.vue';
     </section>
     <section class="h-screen grid grid-cols-2 p-20">
       <div class="flex flex-col justify-center items-center gap-10 p-20">
-        <div class="shadow-md bg-zinc-700 p-10 rounded-xl w-full">
+        <div class=" bg-zinc-700 p-10 rounded-xl w-full">
           <h2 class="text-emerald-500 text-3xl font-mono">Front End</h2>
           <p class="text-sm text-gray-400 font-mono text-justify mt-5">Lorem ipsum dolor sit, amet consectetur
             adipisicing
@@ -40,7 +40,7 @@ import Role from '@/components/Role.vue';
             Exercitationem voluptates in aut quam nesciunt eum amet inventore</p>
           <RouterLink to="projects" class="underline hover:text-emerald-400 mt-10 block">2 0 projects</RouterLink>
         </div>
-        <div class="shadow-md bg-zinc-700 p-10 rounded-xl w-full">
+        <div class=" bg-zinc-700 p-10 rounded-xl w-full">
           <h2 class="text-emerald-500 text-3xl font-mono">Back End</h2>
           <p class="text-sm text-gray-400 font-mono text-justify mt-5">Lorem ipsum dolor sit, amet consectetur
             adipisicing
@@ -67,37 +67,60 @@ import Role from '@/components/Role.vue';
         <ProjectCard></ProjectCard>
         <ProjectCard></ProjectCard>
         <ProjectCard></ProjectCard>
-        <div class="shadow-md border-emerald-300 border p-10 rounded-xl w-full">
+        <div class=" border-emerald-300 border p-10 rounded-xl w-full">
           <h2 class="text-emerald-500 text-3xl font-mono">All Projects</h2>
-          <p class="text-sm text-gray-400 font-mono text-justify mt-5">* Some projects are not allow to be published by NDA. If you want to see more, <RouterLink to="projects" class="underline text-emerald-400">Contact</RouterLink></p>
+          <p class="text-sm text-gray-400 font-mono text-justify mt-5">* Some projects are not allow to be published by
+            NDA. If you want to see more, <RouterLink to="projects" class="underline text-emerald-400">Contact
+            </RouterLink>
+          </p>
           <p class="mt-10 opacity-0">.</p>
         </div>
       </div>
     </section>
-
     <section class="h-screen p-20">
       <h2 class="text-4xl">Testimonials</h2>
       <p class="text-sm text-gray-400 font-mono text-justify mt-5">What clients says about me</p>
-      <div class="shadow-md bg-zinc-900  px-28 py-16 rounded-xl w-full mt-10">
+      <div class=" bg-zinc-900  px-28 py-16 rounded-xl w-full mt-10">
         <h3 class="text-sm text-gray-400 font-mono text-justify mt-5">***** 5 star rating</h3>
-        <h2 class="text-justify italic text-xl font-mono mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet illum nam iusto dolore similique optio provident cum quibusdam quas veniam repellendus laudantium nostrum facere id velit distinctio non, delectus eos quasi voluptates, adipisci assumenda inventore reiciendis exercitationem! Exercitationem blanditiis veniam saepe doloribus velit vitae voluptatem ea! Praesentium officia id, quod, atque molestias nobis doloribus nulla sequi eius iste debitis ex quas voluptatibus ad at nesciunt magnam cum. Voluptates, fugiat asperiores.</h2>
+        <h2 class="text-justify italic text-xl font-mono mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Amet illum nam iusto dolore similique optio provident cum quibusdam quas veniam repellendus laudantium nostrum
+          facere id velit distinctio non, delectus eos quasi voluptates, adipisci assumenda inventore reiciendis
+          exercitationem! Exercitationem blanditiis veniam saepe doloribus velit vitae voluptatem ea! Praesentium
+          officia id, quod, atque molestias nobis doloribus nulla sequi eius iste debitis ex quas voluptatibus ad at
+          nesciunt magnam cum. Voluptates, fugiat asperiores.</h2>
       </div>
       <div class="grid grid-cols-4 justify-center items-center gap-2 mt-20">
-        <div class="shadow-md border-b-emerald-300 border-b p-10w-full">
+        <div class=" border-b-emerald-300 border-b">
           <h2 class="text-xl font-mono">User 1</h2>
           <p class="text-sm text-gray-400 font-mono text-justify mt-2 pb-3">Reviewer position</p>
         </div>
-        <div class="shadow-md border-b-zinc-600 border-b p-10w-full">
+        <div class=" border-b-zinc-600 border-b">
           <h2 class="text-xl font-mono">User 2</h2>
           <p class="text-sm text-gray-400 font-mono text-justify mt-2 pb-3">Reviewer position</p>
         </div>
-        <div class="shadow-md border-b-zinc-600 border-b p-10w-full">
+        <div class=" border-b-zinc-600 border-b">
           <h2 class="text-xl font-mono">User 3</h2>
           <p class="text-sm text-gray-400 font-mono text-justify mt-2 pb-3">Reviewer position</p>
         </div>
-        <div class="shadow-md border-b-zinc-600 border-b p-10w-full">
+        <div class=" border-b-zinc-600 border-b">
           <h2 class="text-xl font-mono">User 4</h2>
           <p class="text-sm text-gray-400 font-mono text-justify mt-2 pb-3">Reviewer position</p>
+        </div>
+      </div>
+    </section>
+    <section class="h-3/4 p-20">
+      <div class="flex justify-center items-center gap-2 mt-20">
+        <div class="col-span-4 w-2/3">
+          <h2 class="text-5xl font-mono">Let's make something amezing together
+          </h2>
+          <p class="text-5xl font-mono mt-10">Start by <RouterLink to="projects" class="underline text-emerald-400 ">
+              Saying Hi</RouterLink>
+          </p>
+        </div>
+        <div class="col-span-1 w-1/3 flex flex-col gap-10">
+          <p class="text-sm text-gray-400 font-mono">Information</p>
+          <p class="text-2xl text-gray-400">Delhi, India</p>
+          <h2 class="text-4xl font-mono">knishant113@gmail.com</h2>
         </div>
       </div>
     </section>
