@@ -108,7 +108,7 @@ import Role from '@/components/Role.vue';
         </div>
       </div>
     </section>
-    <section class="h-3/4 p-20">
+    <section class="h-96 p-20">
       <div class="flex justify-center items-center gap-2 mt-20">
         <div class="col-span-4 w-2/3">
           <h2 class="text-5xl font-mono">Let's make something amezing together
