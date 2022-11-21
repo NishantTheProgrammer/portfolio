@@ -2,6 +2,9 @@
 import NavBar from '@/components/NavBar.vue';
 import ProjectCard from '@/components/ProjectCard.vue';
 import Role from '@/components/Role.vue';
+import { useProjectsStore } from '@/stores/project';
+
+const { projects } = useProjectsStore();
 </script>
 
 <template>
@@ -61,12 +64,10 @@ import Role from '@/components/Role.vue';
           magnam?</p>
       </div>
     </section>
-    <section class="h-screen p-20">
+    <section class="p-20">
       <h2 class="text-4xl">Latest works</h2>
       <div class="grid grid-cols-2 justify-center items-center gap-10 mt-10">
-        <ProjectCard></ProjectCard>
-        <ProjectCard></ProjectCard>
-        <ProjectCard></ProjectCard>
+        <ProjectCard v-for="project in projects.slice(0, 5)" :project="project"></ProjectCard>
         <div class=" border-emerald-300 border p-10 rounded-xl w-full">
           <h2 class="text-emerald-500 text-3xl font-mono">All Projects</h2>
           <p class="text-sm text-gray-400 font-mono text-justify mt-5">* Some projects are not allow to be published by
