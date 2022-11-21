@@ -179,10 +179,9 @@ svg circle {
             </circle>
           </svg>
           <span class="percent">{{ skill.percent }}%</span>
-          <p class="text-center skillName">{{ skill.technology }}</p>
+          <p class="text-center skillName"><font-awesome-icon  class="icon" :icon="skill.icon" />&nbsp; {{ skill.technology }}</p>
           <div class="framework">
-            <i v-for="framework in skill.frameworks" :title="framework.title" class="icon"
-              :style="{ color: framework.color }"></i>
+            <font-awesome-icon v-for="framework in skill.frameworks"  :style="{ color: framework.color }" class="icon" :icon="framework.icon" />
           </div>
         </div>
       </div>
