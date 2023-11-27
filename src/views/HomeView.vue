@@ -10,7 +10,7 @@ const { projects } = useProjectsStore();
 <template>
   <NavBar></NavBar>
   <main>
-    <section class="h-[88vh] flex items-end justify-between px-20">
+    <!-- <section class="h-[88vh] flex items-end justify-between px-20">
       <div class="w-3/5 h-full p-40">
         <Role></Role>
         <h1 class="text-4xl mt-5">Front End Developer <br><span class="text-xl">at Dhwani Rural Information Systems PVT.
@@ -63,10 +63,10 @@ const { projects } = useProjectsStore();
           iste consectetur, eius magni voluptatum quibusdam sed! Expedita quaerat obcaecati nobis aliquid
           magnam?</p>
       </div>
-    </section>
-    <section class="p-20">
+    </section> -->
+    <section class="px-4 sm:px-8 lg:px-16 xl:px-20 py-10 sm:py-16 lg:py-20">
       <h2 class="text-4xl">Latest works</h2>
-      <div class="grid grid-cols-2 justify-center items-center gap-10 mt-10">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 justify-center items-center gap-10 mt-10">
         <ProjectCard v-for="project in projects.slice(0, 5)" :project="project"></ProjectCard>
         <div class=" border-emerald-300 border p-10 rounded-xl w-full">
           <h2 class="text-emerald-500 text-3xl font-mono">All Projects</h2>
@@ -78,7 +78,7 @@ const { projects } = useProjectsStore();
         </div>
       </div>
     </section>
-    <section class="h-screen p-20">
+    <!-- <section class="h-screen p-20">
       <h2 class="text-4xl">Testimonials</h2>
       <p class="text-sm text-gray-400 font-mono text-justify mt-5">What clients says about me</p>
       <div class=" bg-zinc-900  px-28 py-16 rounded-xl w-full mt-10">
@@ -107,21 +107,23 @@ const { projects } = useProjectsStore();
           <p class="text-sm text-gray-400 font-mono text-justify mt-2 pb-3">Reviewer position</p>
         </div>
       </div>
-    </section>
-    <section class="h-96 p-20">
-      <div class="flex justify-center items-center gap-2 mt-20">
-        <div class="col-span-4 w-2/3">
-          <h2 class="text-5xl font-mono">Let's make something amezing together
-          </h2>
-          <p class="text-5xl font-mono mt-10">Start by <RouterLink to="projects" class="underline text-emerald-400 ">
-              Saying Hi</RouterLink>
-          </p>
+    </section> -->
+    <section class="h-auto md:h-96 p-10 md:p-20">
+      <div class="flex flex-col md:flex-row justify-center items-center md:gap-10 mt-10 md:mt-20">
+        <div class="md:col-span-4 w-full md:w-2/3">
+          <h2 class="text-2xl md:text-3xl lg:text-4xl font-mono text-center md:text-left">Let's make something amazing
+            together</h2>
+          <p class="text-xl md:text-2xl lg:text-3xl font-mono mt-5 md:mt-10 text-center md:text-left">Start by <a
+              href="/projects" class="underline text-emerald-400">Saying Hi</a></p>
         </div>
-        <div class="col-span-1 w-1/3 flex flex-col gap-10">
-          <p class="text-sm text-gray-400 font-mono">Information</p>
-          <p class="text-2xl text-gray-400">Delhi, India</p>
-          <h2 class="text-4xl font-mono">knishant113@gmail.com</h2>
+        <div class="md:col-span-1 w-full md:w-1/3 flex flex-col md:gap-5 mt-10 md:mt-0">
+          <p class="text-sm md:text-base lg:text-lg text-gray-400 font-mono text-center md:text-left">Information</p>
+          <p class="text-base md:text-lg lg:text-xl text-gray-400 text-center md:text-left">Delhi, India</p>
+          <h2 class="text-lg md:text-xl lg:text-2xl font-mono text-center md:text-left">knishant113@gmail.com</h2>
         </div>
       </div>
     </section>
-</main></template>
+
+
+  </main>
+</template>

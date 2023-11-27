@@ -167,21 +167,24 @@ svg circle {
 <template>
   <NavBar></NavBar>
   <main>
-    <section class="p-20">
-      <h2 class="text-4xl">About</h2>
-      <div class="grid grid-cols-4 justify-center items-center gap-10 mt-10">
+    <section class="px-4 sm:px-8 lg:px-16 xl:px-20 py-10 sm:py-16 lg:py-20">
+      <h2 class="text-4xl text-center">About</h2>
+      <div class="grid grid-cols-1  md:grid-cols-3 xl:grid-cols-4 justify-items-center items-center gap-10 mt-10">
 
-        <div v-for="skill in skills" :key="skill.technology" class="bg-neutral-700 rounded-md p-5 skill">
-          <svg>
+        <div v-for="skill in skills" :key="skill.technology"
+          class="bg-neutral-700 rounded-md p-5 skill flex flex-col items-center">
+          <svg class="w-full h-auto">
             <circle class="circle"
               :style="{ strokeDashoffset: `calc(440 - (440 * ${skill.percent}) / 100)`, stroke: skill.color }" cx="70"
               cy="70" r="70">
             </circle>
           </svg>
-          <span class="percent">{{ skill.percent }}%</span>
-          <p class="text-center skillName"><font-awesome-icon  class="icon" :icon="skill.icon" />&nbsp; {{ skill.technology }}</p>
-          <div class="framework">
-            <font-awesome-icon v-for="framework in skill.frameworks"  :style="{ color: framework.color }" class="icon" :icon="framework.icon" />
+          <span class="percent block text-center">{{ skill.percent }}%</span>
+          <p class="text-center skillName text-xs sm:text-sm md:text-base"><font-awesome-icon class="icon"
+              :icon="skill.icon" />&nbsp; {{ skill.technology }}</p>
+          <div class="framework flex justify-center mt-2">
+            <font-awesome-icon v-for="framework in skill.frameworks" :key="framework.icon"
+              :style="{ color: framework.color }" class="icon mx-1" :icon="framework.icon" />
           </div>
         </div>
       </div>

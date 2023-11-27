@@ -9,7 +9,7 @@ export const useProjectsStore = defineStore("project", () => {
         type: 'video',                                                   // ['youtube', 'video', 'img']
         link: './Media/chatThings.mp4'
       },
-      description: "I​t’s a social media application where users can Chat, make friends, listen same music simultaneously, Post, comments and react on post, share stories, play basic multiplayer games like KBC and tic-tac-toe",
+      description: "platform designed to bring people together! It's a social hub where connections flourish through chats, shared music experiences, and the joy of making new friends. Dive into a world where posting, reacting, and commenting create vibrant interactions. Share your stories, play engaging games like KBC and tic-tac-toe, and let the good times roll!",
       sourceCode: 'https://github.com/NishantTheProgrammer/ChatThings',
       technologies: ['django', 'react', 'mysql']
     },
