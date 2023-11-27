@@ -13,7 +13,7 @@ const { projects } = useProjectsStore();
     <section class="h-[88vh] flex items-end justify-between px-20">
       <div class="w-3/5 h-full p-40">
         <Role></Role>
-        <h1 class="text-4xl mt-5">Mobile Application developer <br><span class="text-xl">at Max vision solutions PVT.
+        <h1 class="text-4xl mt-5">Front End Developer <br><span class="text-xl">at Dhwani Rural Information Systems PVT.
             LTD.</span></h1>
         <p class="text-sm text-gray-400 mt-20 font-mono">A curious tech guy with awesome technical skills and great
           thinking ability I like to build logic behind the seens rather than using any ready made tool.</p>
@@ -82,13 +82,12 @@ const { projects } = useProjectsStore();
       <h2 class="text-4xl">Testimonials</h2>
       <p class="text-sm text-gray-400 font-mono text-justify mt-5">What clients says about me</p>
       <div class=" bg-zinc-900  px-28 py-16 rounded-xl w-full mt-10">
-        <h3 class="text-sm text-gray-400 font-mono text-justify mt-5">***** 5 star rating</h3>
-        <h2 class="text-justify italic text-xl font-mono mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Amet illum nam iusto dolore similique optio provident cum quibusdam quas veniam repellendus laudantium nostrum
-          facere id velit distinctio non, delectus eos quasi voluptates, adipisci assumenda inventore reiciendis
-          exercitationem! Exercitationem blanditiis veniam saepe doloribus velit vitae voluptatem ea! Praesentium
-          officia id, quod, atque molestias nobis doloribus nulla sequi eius iste debitis ex quas voluptatibus ad at
-          nesciunt magnam cum. Voluptates, fugiat asperiores.</h2>
+        <h3 class="text-sm text-gray-400 font-mono text-justify mt-5">Amazing experience</h3>
+        <h2 class="text-justify italic text-xl font-mono mt-5">Nishant is a highly skilled Full-stack Developer with
+          excellent technical expertise and a deep understanding of various programming languages, frameworks, and
+          platforms. His ability to communicate complex technical concepts in an easy-to-understand manner and his
+          dedication to delivering high-quality work on time and on budget make him an excellent choice for any
+          organization seeking a reliable and talented Full-stack Developer.</h2>
       </div>
       <div class="grid grid-cols-4 justify-center items-center gap-2 mt-20">
         <div class=" border-b-emerald-300 border-b">
@@ -125,5 +124,4 @@ const { projects } = useProjectsStore();
         </div>
       </div>
     </section>
-  </main>
-</template>
+</main></template>
