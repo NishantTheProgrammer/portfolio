@@ -11,7 +11,7 @@ const { projects } = useProjectsStore();
   <NavBar></NavBar>
   <main>
     <section class="xl:h-[88vh] flex items-end justify-between p-5 xl:px-20">
-      <div class="xl:w-3/5 h-full py-40 xl:p-40">
+      <div class="xl:w-3/5 h-full md:py-40 xl:p-40">
         <Role></Role>
         <h1 class="text-4xl mt-5">Full Stack Developer <br><span class="text-xl">at Dhwani Rural Information Systems PVT.
             LTD.</span></h1>
@@ -25,16 +25,17 @@ const { projects } = useProjectsStore();
           to dissect and conquer even the most intricate of problems.
         </p>
         <a href="mailto:knishant113@gmail.com" class="block mt-20 text-green-400 underline font-bold">LET'S TALK!</a>
-        <div class="grid grid-cols-2 mt-20">
-          <div class="flex gap-3 items-center">
-            <h3 class="text-6xl">3</h3>
-            <p class="text-lg text-gray-400 font-mono">Years <br>Experience</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 mt-20 gap-8 md:gap-16">
+          <div class="flex flex-col items-center justify-center">
+            <h3 class="text-4xl md:text-6xl">3</h3>
+            <p class="text-base md:text-lg text-gray-400 font-mono text-center mt-2">Years Experience</p>
           </div>
-          <div class="flex gap-3 items-center">
-            <h3 class="text-6xl">10+</h3>
-            <p class="text-lg text-gray-400 font-mono">Projects <br>completed</p>
+          <div class="flex flex-col items-center justify-center mt-8 md:mt-0">
+            <h3 class="text-4xl md:text-6xl">10+</h3>
+            <p class="text-base md:text-lg text-gray-400 font-mono text-center mt-2">Projects completed</p>
           </div>
         </div>
+
       </div>
       <div class="hidden xl:flex h-full w-2/5 justify-end">
         <img src="./../assets/nishant.png" style="filter: drop-shadow(0px 0px 2px black);" alt="Nishant" class="h-full">
@@ -117,4 +118,5 @@ const { projects } = useProjectsStore();
 
 
 
-</main></template>
+  </main>
+</template>

@@ -5,9 +5,13 @@ export default {
         return {
             roles: [
                 "Programmer",
-                "React Dev",
-                "Django Dev",
                 "Freelancer",
+                "Node",
+                "Express",
+                "Mongo",
+                "Angular",
+                "React",
+                "Vue",
             ],
             role: 'Programmer',
             write: false,
