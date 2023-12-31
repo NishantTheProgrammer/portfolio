@@ -10,8 +10,8 @@ const { projects } = useProjectsStore();
 <template>
   <NavBar></NavBar>
   <main>
-    <!-- <section class="h-[88vh] flex items-end justify-between px-20">
-      <div class="w-3/5 h-full p-40">
+    <section class="xl:h-[88vh] flex items-end justify-between p-5 xl:px-20">
+      <div class="xl:w-3/5 h-full py-40 xl:p-40">
         <Role></Role>
         <h1 class="text-4xl mt-5">Full Stack Developer <br><span class="text-xl">at Dhwani Rural Information Systems PVT.
             LTD.</span></h1>
@@ -36,10 +36,10 @@ const { projects } = useProjectsStore();
           </div>
         </div>
       </div>
-      <div class="h-full w-2/5 flex justify-end">
+      <div class="hidden xl:flex h-full w-2/5 justify-end">
         <img src="./../assets/nishant.png" style="filter: drop-shadow(0px 0px 2px black);" alt="Nishant" class="h-full">
       </div>
-    </section> -->
+    </section>
     <section class="min-h-screen grid grid-cols-1 lg:grid-cols-2 p-5 ">
       <div class="flex flex-col justify-center items-center gap-5 md:gap-10  md:p-20">
         <div class="bg-zinc-700 p-5 md:p-10 rounded-xl w-full">
