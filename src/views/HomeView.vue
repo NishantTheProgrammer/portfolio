@@ -13,18 +13,25 @@ const { projects } = useProjectsStore();
     <!-- <section class="h-[88vh] flex items-end justify-between px-20">
       <div class="w-3/5 h-full p-40">
         <Role></Role>
-        <h1 class="text-4xl mt-5">Front End Developer <br><span class="text-xl">at Dhwani Rural Information Systems PVT.
+        <h1 class="text-4xl mt-5">Full Stack Developer <br><span class="text-xl">at Dhwani Rural Information Systems PVT.
             LTD.</span></h1>
-        <p class="text-sm text-gray-400 mt-20 font-mono">A curious tech guy with awesome technical skills and great
-          thinking ability I like to build logic behind the seens rather than using any ready made tool.</p>
+        <p class="text-sm text-gray-400 mt-20 font-mono">I'm a curious tech guy with a passion for unraveling complex
+          challenges. With a track record of developing over 10 successful applications for companies, I've honed my
+          technical prowess to a fine art.
+          <br />
+          <br />
+
+          I proudly sport HackerRank's coveted 6th Star gold badge in problem- solving. This is a testament to my ability
+          to dissect and conquer even the most intricate of problems.
+        </p>
         <a href="mailto:knishant113@gmail.com" class="block mt-20 text-green-400 underline font-bold">LET'S TALK!</a>
         <div class="grid grid-cols-2 mt-20">
           <div class="flex gap-3 items-center">
-            <h3 class="text-6xl">2</h3>
+            <h3 class="text-6xl">3</h3>
             <p class="text-lg text-gray-400 font-mono">Years <br>Experience</p>
           </div>
           <div class="flex gap-3 items-center">
-            <h3 class="text-6xl">18</h3>
+            <h3 class="text-6xl">10+</h3>
             <p class="text-lg text-gray-400 font-mono">Projects <br>completed</p>
           </div>
         </div>
@@ -32,8 +39,8 @@ const { projects } = useProjectsStore();
       <div class="h-full w-2/5 flex justify-end">
         <img src="./../assets/nishant.png" style="filter: drop-shadow(0px 0px 2px black);" alt="Nishant" class="h-full">
       </div>
-    </section>
-    <section class="h-screen grid grid-cols-2 p-20">
+    </section> -->
+    <!-- <section class="h-screen grid grid-cols-2 p-20">
       <div class="flex flex-col justify-center items-center gap-10 p-20">
         <div class=" bg-zinc-700 p-10 rounded-xl w-full">
           <h2 class="text-emerald-500 text-3xl font-mono">Front End</h2>
@@ -78,52 +85,36 @@ const { projects } = useProjectsStore();
         </div>
       </div>
     </section>
-    <!-- <section class="h-screen p-20">
-      <h2 class="text-4xl">Testimonials</h2>
-      <p class="text-sm text-gray-400 font-mono text-justify mt-5">What clients says about me</p>
-      <div class=" bg-zinc-900  px-28 py-16 rounded-xl w-full mt-10">
-        <h3 class="text-sm text-gray-400 font-mono text-justify mt-5">Amazing experience</h3>
-        <h2 class="text-justify italic text-xl font-mono mt-5">Nishant is a highly skilled Full-stack Developer with
-          excellent technical expertise and a deep understanding of various programming languages, frameworks, and
-          platforms. His ability to communicate complex technical concepts in an easy-to-understand manner and his
-          dedication to delivering high-quality work on time and on budget make him an excellent choice for any
+    <section class="min-h-screen p-5 md:p-20">
+      <h2 class="text-3xl md:text-4xl lg:text-5xl">Testimonials</h2>
+      <p class="text-xs md:text-sm text-gray-400 font-mono text-center md:text-left mt-3 md:mt-5">What clients say about
+        me</p>
+      <div class="bg-zinc-900 px-5 md:px-28 py-10 md:py-16 rounded-xl w-full mt-5 md:mt-10">
+        <h3 class="text-xs md:text-sm text-gray-400 font-mono text-center md:text-left mt-3 md:mt-5">Firas Serhan & A'laa
+          Waked (Israeli client)</h3>
+        <h2 class="text-sm md:text-base lg:text-lg font-mono mt-3 md:mt-5">Nishant is a highly skilled Full-stack
+          Developer with excellent technical expertise and a deep understanding of various programming languages,
+          frameworks, and platforms. His ability to communicate complex technical concepts in an easy-to-understand manner
+          and his dedication to delivering high-quality work on time and on budget make him an excellent choice for any
           organization seeking a reliable and talented Full-stack Developer.</h2>
       </div>
-      <div class="grid grid-cols-4 justify-center items-center gap-2 mt-20">
-        <div class=" border-b-emerald-300 border-b">
-          <h2 class="text-xl font-mono">User 1</h2>
-          <p class="text-sm text-gray-400 font-mono text-justify mt-2 pb-3">Reviewer position</p>
-        </div>
-        <div class=" border-b-zinc-600 border-b">
-          <h2 class="text-xl font-mono">User 2</h2>
-          <p class="text-sm text-gray-400 font-mono text-justify mt-2 pb-3">Reviewer position</p>
-        </div>
-        <div class=" border-b-zinc-600 border-b">
-          <h2 class="text-xl font-mono">User 3</h2>
-          <p class="text-sm text-gray-400 font-mono text-justify mt-2 pb-3">Reviewer position</p>
-        </div>
-        <div class=" border-b-zinc-600 border-b">
-          <h2 class="text-xl font-mono">User 4</h2>
-          <p class="text-sm text-gray-400 font-mono text-justify mt-2 pb-3">Reviewer position</p>
-        </div>
-      </div>
-    </section> -->
-    <section class="h-auto md:h-96 p-10 md:p-20">
-      <div class="flex flex-col md:flex-row justify-center items-center md:gap-10 mt-10 md:mt-20">
-        <div class="md:col-span-4 w-full md:w-2/3">
-          <h2 class="text-2xl md:text-3xl lg:text-4xl font-mono text-center md:text-left">Let's make something amazing
+    </section>
+    <section class="h-auto md:h-96 p-5 md:p-20">
+      <div class="flex flex-col md:flex-row justify-center items-center md:justify-between md:gap-10 mt-5 md:mt-20">
+        <div class="md:w-2/3 md:text-left">
+          <h2 class="text-lg md:text-3xl lg:text-4xl font-mono text-center md:text-left">Let's make something amazing
             together</h2>
-          <p class="text-xl md:text-2xl lg:text-3xl font-mono mt-5 md:mt-10 text-center md:text-left">Start by <a
+          <p class="text-base md:text-2xl lg:text-3xl font-mono mt-3 md:mt-5 text-center md:text-left">Start by <a
               href="/projects" class="underline text-emerald-400">Saying Hi</a></p>
         </div>
-        <div class="md:col-span-1 w-full md:w-1/3 flex flex-col md:gap-5 mt-10 md:mt-0">
-          <p class="text-sm md:text-base lg:text-lg text-gray-400 font-mono text-center md:text-left">Information</p>
+        <div class="md:w-1/3 md:text-left mt-5 md:mt-0">
+          <p class="text-xs md:text-base lg:text-lg text-gray-400 font-mono text-center md:text-left">Information</p>
           <p class="text-base md:text-lg lg:text-xl text-gray-400 text-center md:text-left">Delhi, India</p>
-          <h2 class="text-lg md:text-xl lg:text-2xl font-mono text-center md:text-left">knishant113@gmail.com</h2>
+          <h2 class="text-base md:text-xl lg:text-2xl font-mono text-center md:text-left">knishant113@gmail.com</h2>
         </div>
       </div>
     </section>
 
 
-  </main>
-</template>
+
+</main></template>
