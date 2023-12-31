@@ -18,7 +18,9 @@
     "@fortawesome/vue-fontawesome": "^3.0.2",
     "pinia": "^2.0.23",
     "vue": "^3.2.41",
-    "vue-router": "^4.1.5"
+    "vue-router": "^4.1.5",
+    "vue-toast-notification": "^3.1.2",
+    "vuefire": "^3.1.19"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.1.4",

@@ -1,6 +1,27 @@
 <script setup lang="ts">
 import NavBar from '@/components/NavBar.vue';
+import { useToast } from 'vue-toast-notification';
+import 'vue-toast-notification/dist/theme-sugar.css';
 
+const $toast = useToast();
+
+const handleSubmit = async (event: any) => {
+  event.preventDefault(); // Prevents the default form submission behavior
+  const email = event.target.email.value;
+  const subject = event.target.subject.value;
+  const message = event.target.message.value;
+
+  try {
+    await fetch('https://nishanttheprogrammer-portfolio-default-rtdb.firebaseio.com/queries.json', {
+      method: 'POST',
+      body: JSON.stringify({ email, subject, message })
+    });
+
+    $toast.success(`Thanks for reaching me I'll be back to you really soon on ${email}`);
+  } catch (error) {
+    $toast.error(`Something went wrong`);
+  }
+};
 </script>
 
 <template>
@@ -11,7 +32,7 @@ import NavBar from '@/components/NavBar.vue';
     <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
       <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Have a question or want
         to discuss a project? Drop me a message!</p>
-      <form action="#" class="space-y-8">
+      <form action="#" @submit="handleSubmit" class="space-y-8">
         <div>
           <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
           <input type="email" id="email"
