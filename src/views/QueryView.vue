@@ -36,20 +36,20 @@ const handleSubmit = async (event: any) => {
         <div>
           <label for="email" class="block mb-2 text-sm font-medium text-gray-300">Your email</label>
           <input type="email" id="email"
-            class="shadow-sm bg-white  border border-gray-300 text-gray-900 dark:text-white text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5 dark:placeholder-gray-400 dark:focus:ring-green-500 dark:focus:border-green-500 dark:shadow-sm-light"
+            class="shadow-sm bg-white  border border-gray-300 text-gray-900  text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5 dark:placeholder-gray-400 dark:focus:ring-green-500 dark:focus:border-green-500 dark:shadow-sm-light"
             placeholder="name@example.com" required>
         </div>
         <div>
           <label for="subject" class="block mb-2 text-sm font-medium text-gray-300">Subject</label>
           <input type="text" id="subject"
-            class="block p-3 w-full text-sm text-gray-900 dark:text-white bg-white  rounded-lg border border-gray-300 shadow-sm focus:ring-green-500 focus:border-green-500 dark:placeholder-gray-400 dark:focus:ring-green-500 dark:focus:border-green-500 dark:shadow-sm-light"
+            class="block p-3 w-full text-sm text-gray-900  bg-white  rounded-lg border border-gray-300 shadow-sm focus:ring-green-500 focus:border-green-500 dark:placeholder-gray-400 dark:focus:ring-green-500 dark:focus:border-green-500 dark:shadow-sm-light"
             placeholder="How can I assist you?" required>
         </div>
         <div class="sm:col-span-2">
           <label for="message" class="block mb-2 text-sm font-medium text-gray-400">Your
             message</label>
           <textarea id="message" rows="6"
-            class="block p-2.5 w-full text-sm text-gray-900 dark:text-white bg-white  rounded-lg shadow-sm border border-gray-300 focus:ring-green-500 focus:border-green-500 dark:placeholder-gray-400 dark:focus:ring-green-500 dark:focus:border-green-500 dark:shadow-sm-light"
+            class="block p-2.5 w-full text-sm text-gray-900  bg-white  rounded-lg shadow-sm border border-gray-300 focus:ring-green-500 focus:border-green-500 dark:placeholder-gray-400 dark:focus:ring-green-500 dark:focus:border-green-500 dark:shadow-sm-light"
             placeholder="Leave your message here..."></textarea>
         </div>
         <button type="submit"
