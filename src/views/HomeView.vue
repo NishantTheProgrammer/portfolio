@@ -40,37 +40,34 @@ const { projects } = useProjectsStore();
         <img src="./../assets/nishant.png" style="filter: drop-shadow(0px 0px 2px black);" alt="Nishant" class="h-full">
       </div>
     </section> -->
-    <!-- <section class="h-screen grid grid-cols-2 p-20">
-      <div class="flex flex-col justify-center items-center gap-10 p-20">
-        <div class=" bg-zinc-700 p-10 rounded-xl w-full">
-          <h2 class="text-emerald-500 text-3xl font-mono">Front End</h2>
-          <p class="text-sm text-gray-400 font-mono text-justify mt-5">Lorem ipsum dolor sit, amet consectetur
-            adipisicing
-            elit.
-            Exercitationem voluptates in aut quam nesciunt eum amet inventore</p>
-          <RouterLink to="projects" class="underline hover:text-emerald-400 mt-10 block">2 0 projects</RouterLink>
+    <section class="min-h-screen grid grid-cols-1 lg:grid-cols-2 p-5 ">
+      <div class="flex flex-col justify-center items-center gap-5 md:gap-10  md:p-20">
+        <div class="bg-zinc-700 p-5 md:p-10 rounded-xl w-full">
+          <h2 class="text-emerald-500 text-xl md:text-3xl font-mono">Front End</h2>
+          <p class="text-xs md:text-sm text-gray-400 font-mono text-justify mt-3 md:mt-5">Lorem ipsum dolor sit, amet
+            consectetur adipisicing elit. Exercitationem voluptates in aut quam nesciunt eum amet inventore</p>
+          <a href="projects" class="underline hover:text-emerald-400 mt-3 md:mt-10 block">20 projects</a>
         </div>
-        <div class=" bg-zinc-700 p-10 rounded-xl w-full">
-          <h2 class="text-emerald-500 text-3xl font-mono">Back End</h2>
-          <p class="text-sm text-gray-400 font-mono text-justify mt-5">Lorem ipsum dolor sit, amet consectetur
-            adipisicing
-            elit.
-            Exercitationem voluptates in aut quam nesciunt eum amet inventore</p>
-          <RouterLink to="projects" class="underline hover:text-emerald-400 mt-10 block">10 projects</RouterLink>
+        <div class="bg-zinc-700 p-5 md:p-10 rounded-xl w-full">
+          <h2 class="text-emerald-500 text-xl md:text-3xl font-mono">Back End</h2>
+          <p class="text-xs md:text-sm text-gray-400 font-mono text-justify mt-3 md:mt-5">Lorem ipsum dolor sit, amet
+            consectetur adipisicing elit. Exercitationem voluptates in aut quam nesciunt eum amet inventore</p>
+          <a href="projects" class="underline hover:text-emerald-400 mt-3 md:mt-10 block">10 projects</a>
         </div>
       </div>
-      <div class="flex justify-center  flex-col gap-10 p-20">
-        <p class="text-sm text-gray-400 font-mono">Introduction</p>
-        <h2 class="text-4xl font-mono">Hello! I'm Nishant</h2>
-        <p class="text-xl italic">Every flsfjls</p>
-        <p class="text-sm text-gray-400 font-mono text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing
-          elit.
-          Exercitationem voluptates in aut quam nesciunt eum amet inventore earum incidunt eligendi obcaecati labore
-          molestiae, consequuntur quo, sunt aliquam modi eveniet possimus adipisci magni id porro. Tempora eligendi eos
-          iste consectetur, eius magni voluptatum quibusdam sed! Expedita quaerat obcaecati nobis aliquid
-          magnam?</p>
+      <div class="flex justify-center items-center flex-col gap-5 md:gap-10 md:p-20">
+        <p class="text-xs md:text-sm text-gray-400 font-mono">Introduction</p>
+        <h2 class="text-2xl md:text-4xl font-mono">Hello! I'm Nishant</h2>
+        <p class="text-lg md:text-xl italic">Every flsfjls</p>
+        <p class="text-xs md:text-sm text-gray-400 font-mono text-justify mt-3 md:mt-5">Lorem ipsum dolor sit, amet
+          consectetur adipisicing elit. Exercitationem voluptates in aut quam nesciunt eum amet inventore earum incidunt
+          eligendi obcaecati labore molestiae, consequuntur quo, sunt aliquam modi eveniet possimus adipisci magni id
+          porro. Tempora eligendi eos iste consectetur, eius magni voluptatum quibusdam sed! Expedita quaerat obcaecati
+          nobis aliquid magnam?</p>
       </div>
-    </section> -->
+    </section>
+
+
     <section class="px-4 sm:px-8 lg:px-16 xl:px-20 py-10 sm:py-16 lg:py-20">
       <h2 class="text-4xl">Latest works</h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 justify-center items-center gap-10 mt-10">
@@ -117,4 +114,5 @@ const { projects } = useProjectsStore();
 
 
 
-</main></template>
+  </main>
+</template>
