@@ -44,26 +44,29 @@ const { projects } = useProjectsStore();
       <div class="flex flex-col justify-center items-center gap-5 md:gap-10  md:p-20">
         <div class="bg-zinc-700 p-5 md:p-10 rounded-xl w-full">
           <h2 class="text-emerald-500 text-xl md:text-3xl font-mono">Front End</h2>
-          <p class="text-xs md:text-sm text-gray-400 font-mono text-justify mt-3 md:mt-5">Lorem ipsum dolor sit, amet
-            consectetur adipisicing elit. Exercitationem voluptates in aut quam nesciunt eum amet inventore</p>
-          <a href="projects" class="underline hover:text-emerald-400 mt-3 md:mt-10 block">20 projects</a>
+          <p class="text-xs md:text-sm text-gray-400 font-mono text-justify mt-3 md:mt-5">As a skilled frontend developer,
+            I craft captivating user interfaces using HTML, CSS, and JavaScript. I leverage React, Angular, and Vue.js
+            along with styling libraries like Tailwind and Bootstrap, ensuring seamless and visually appealing experiences
+            across devices.</p>
+          <a href="projects" class="underline hover:text-emerald-400 mt-3 md:mt-10 block">10+ projects</a>
         </div>
         <div class="bg-zinc-700 p-5 md:p-10 rounded-xl w-full">
           <h2 class="text-emerald-500 text-xl md:text-3xl font-mono">Back End</h2>
-          <p class="text-xs md:text-sm text-gray-400 font-mono text-justify mt-3 md:mt-5">Lorem ipsum dolor sit, amet
-            consectetur adipisicing elit. Exercitationem voluptates in aut quam nesciunt eum amet inventore</p>
-          <a href="projects" class="underline hover:text-emerald-400 mt-3 md:mt-10 block">10 projects</a>
+          <p class="text-xs md:text-sm text-gray-400 font-mono text-justify mt-3 md:mt-5">In backend development, I manage
+            server-side operations adeptly. My expertise spans Python, Node.js, Django, and Express.js, while I
+            proficiently handle data storage using MySQL and MongoDB. My focus lies in ensuring robust security measures
+            and creating efficient APIs for seamless server-client communication</p>
+          <a href="projects" class="underline hover:text-emerald-400 mt-3 md:mt-10 block">2 projects</a>
         </div>
       </div>
       <div class="flex justify-center items-center flex-col gap-5 md:gap-10 md:p-20">
-        <p class="text-xs md:text-sm text-gray-400 font-mono">Introduction</p>
-        <h2 class="text-2xl md:text-4xl font-mono">Hello! I'm Nishant</h2>
-        <p class="text-lg md:text-xl italic">Every flsfjls</p>
-        <p class="text-xs md:text-sm text-gray-400 font-mono text-justify mt-3 md:mt-5">Lorem ipsum dolor sit, amet
-          consectetur adipisicing elit. Exercitationem voluptates in aut quam nesciunt eum amet inventore earum incidunt
-          eligendi obcaecati labore molestiae, consequuntur quo, sunt aliquam modi eveniet possimus adipisci magni id
-          porro. Tempora eligendi eos iste consectetur, eius magni voluptatum quibusdam sed! Expedita quaerat obcaecati
-          nobis aliquid magnam?</p>
+        <p class="text-xs md:text-sm text-gray-400 font-mono">What's new</p>
+        <h2 class="text-2xl md:text-4xl font-mono">I'm learning</h2>
+        <p class="text-lg md:text-xl italic">🚀 Embarking on the DSA Odyssey 🚀</p>
+        <p class="text-xs md:text-sm text-gray-400 font-mono text-justify mt-3 md:mt-5">Just launched into the thrilling
+          world of Data Structures and Algorithms. Starting with LeetCode challenges, navigating arrays, trees, graphs—a
+          quest to master problem-solving finesse. Each solved puzzle marks the beginning of an epic coding odyssey. Join
+          me as I unravel the secrets of DSA!</p>
       </div>
     </section>
 
@@ -114,5 +117,4 @@ const { projects } = useProjectsStore();
 
 
 
-  </main>
-</template>
+</main></template>
