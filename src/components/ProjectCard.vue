@@ -11,7 +11,16 @@ export default {
             <span class="border-amber-300 border text-amber-300 rounded text-xs px-2 py-1"
                 v-for="technology in project.technologies">{{ technology }}</span>
         </div>
-        <p class="text-sm text-gray-400 font-mono text-justify mt-5">{{ project.description }}</p>
-        <RouterLink to="projects" class="underline hover:text-emerald-400 mt-auto">20 projects</RouterLink>
+        <p class="text-sm text-gray-400 font-mono text-justify mt-2">{{ project.description }}</p>
+        <div class="flex mt-5 gap-3">
+            <a v-if="project.sourceCode" :href="project.sourceCode" target="_blank" rel="noopener noreferrer"
+                class="py-1 px-2 lg:py-1 lg:px-3 text-sm font-medium text-center text-white rounded-lg bg-green-400 sm:w-fit hover:bg-green-500 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800 border-2 border-green-400">
+                Source Code
+            </a>
+            <a v-if="project.hosted" :href="project.hosted" target="_blank" rel="noopener noreferrer"
+                class="py-1 px-2 lg:py-1 lg:px-3 text-sm font-medium text-center text-white rounded-lg bg-green-400 sm:w-fit hover:bg-green-500 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800 border-2 border-green-400">
+                Hosting
+            </a>
+        </div>
     </div>
 </template>

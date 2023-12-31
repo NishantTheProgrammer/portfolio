@@ -86,7 +86,7 @@ const { projects } = useProjectsStore();
         </div>
       </div>
     </section>
-    <section class="min-h-screen p-5 md:p-20">
+    <section class="p-5 md:p-20">
       <h2 class="text-3xl md:text-4xl lg:text-5xl">Testimonials</h2>
       <p class="text-xs md:text-sm text-gray-400 font-mono text-center md:text-left mt-3 md:mt-5">What clients say about
         me</p>
