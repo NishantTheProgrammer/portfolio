@@ -106,7 +106,7 @@ const { projects } = useProjectsStore();
           <h2 class="text-lg md:text-3xl lg:text-4xl font-mono text-center md:text-left">Let's make something amazing
             together</h2>
           <p class="text-base md:text-2xl lg:text-3xl font-mono mt-3 md:mt-5 text-center md:text-left">Start by <a
-              href="/projects" class="underline text-emerald-400">Saying Hi</a></p>
+            href="mailto:knishant113@gmail.com" class="underline text-emerald-400">Saying Hi</a></p>
         </div>
         <div class="md:w-1/3 md:text-left mt-5 md:mt-0">
           <p class="text-xs md:text-base lg:text-lg text-gray-400 font-mono text-center md:text-left">Information</p>
