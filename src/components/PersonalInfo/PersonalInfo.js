@@ -1,20 +1,22 @@
-import classes from './PersonalInfo.module.css'
+import classes from './PersonalInfo.module.css';
 
 const personalInfo = props => {
     let info = {
         name: "Nishant",
-        qualification: "BCA",
-        nationality: "Indian",
-        experiance: "1 year",
+        role: "Senior Software Engineer",
+        qualification: "MCA (Master of Computer Applications)",
+        experience: "6 Years",
+        specialization: "Full Stack & Microservices",
         phone: "+91 7838716089",
         email: "knishant113@gmail.com",
-        age: "22 Years",
+        location: "Delhi, India",
+        nationality: "Indian",
         languages: "English, Hindi, Urdu"
-    }
+    };
 
     return (
-        <div class={classes.personalInfo}>
-            <table class={classes.info}>
+        <div className={classes.personalInfo}>
+            <table className={classes.info}>
                 <tbody>{
                 Object.keys(info).map(ele => {
                     return (

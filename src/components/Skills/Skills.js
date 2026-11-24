@@ -4,87 +4,79 @@ import classes from './Skills.module.css';
 const skills = props => {
 
     const skillsData = {
-        HTML: {
-            percent: 80,
-            color: '#de4b25',
-            icon: 'fab fa-html5'
+        "Node.js": {
+            percent: 95,
+            color: '#339933',
+            icon: 'fab fa-node-js',
+            frameworks: [
+                { title: 'Express.js', icon: 'fas fa-server', color: '#ffffff' },
+                { title: 'Next.js', icon: 'fas fa-bolt', color: '#ffffff' }
+            ]
         },
-        CSS: {
-            percent: 75,
-            color: '#3596d0',
-            icon: 'fab fa-css3-alt'
-        },
-        JavaScript: {
-            percent: 90,
-            color: '#f0d91d',
+        "TypeScript & JS": {
+            percent: 95,
+            color: '#3178c6',
             icon: 'fab fa-js-square',
             frameworks: [
                 { title: 'React JS', icon: 'fab fa-react', color: '#15aabf' },
+                { title: 'Angular', icon: 'fab fa-angular', color: '#dd0031' },
                 { title: 'Vue JS', icon: 'fab fa-vuejs', color: '#35b741' }
             ]
         },
-        Python: {
-            percent: 85,
-            color: '#4894c3',
-            icon: 'fab fa-python',
+        "Microservices": {
+            percent: 90,
+            color: '#ffb400',
+            icon: 'fas fa-network-wired',
             frameworks: [
-                { title: 'Django', icon: 'fab fa-dyalog', color: 'white' },
+                { title: 'System Design', icon: 'fas fa-sitemap', color: '#ffb400' },
+                { title: 'REST APIs', icon: 'fas fa-exchange-alt', color: '#ffffff' }
             ]
         },
-        SQL: {
-            percent: 70,
-            color: '#27efff',
-            icon: 'fas fa-database'
+        "Databases": {
+            percent: 90,
+            color: '#47a248',
+            icon: 'fas fa-database',
+            frameworks: [
+                { title: 'MongoDB', icon: 'fas fa-leaf', color: '#47a248' },
+                { title: 'PostgreSQL', icon: 'fas fa-database', color: '#336791' },
+                { title: 'MySQL', icon: 'fas fa-table', color: '#4479a1' }
+            ]
         },
-        Linux: {
-            percent: 55,
-            color: '#cf7a0a',
-            icon: 'fa fa-linux'
-        },
-        PHP: {
+        "Gen AI & RAG": {
             percent: 85,
-            color: '#8993be',
-            icon: 'fab fa-php',
-            frameworks: [{ title: 'Laravel', icon: 'fab fa-laravel', color: 'red' }]
+            color: '#8a2be2',
+            icon: 'fas fa-brain',
+            frameworks: [
+                { title: 'Agentic AI', icon: 'fas fa-robot', color: '#ba68c8' },
+                { title: 'LangGraph', icon: 'fas fa-project-diagram', color: '#81c784' }
+            ]
         },
-        Bootstrap: {
-            percent: 65,
-            color: '#543b79',
-            icon: 'fab fa-bootstrap'
+        "Docker & DevOps": {
+            percent: 85,
+            color: '#2496ed',
+            icon: 'fab fa-docker',
+            frameworks: [
+                { title: 'Linux', icon: 'fab fa-linux', color: '#fcc624' },
+                { title: 'Git', icon: 'fab fa-git-alt', color: '#f05032' },
+                { title: 'Jest', icon: 'fas fa-vial', color: '#c21325' }
+            ]
         },
-        Java: {
-            percent: 80,
-            color: '#e61f24',
-            icon: 'fab fa-java'
+        "Frontend & UI": {
+            percent: 90,
+            color: '#38b2ac',
+            icon: 'fab fa-css3-alt',
+            frameworks: [
+                { title: 'Tailwind CSS', icon: 'fab fa-css3', color: '#38b2ac' },
+                { title: 'Material UI', icon: 'fas fa-layer-group', color: '#0081cb' },
+                { title: 'Bootstrap', icon: 'fab fa-bootstrap', color: '#563d7c' }
+            ]
         },
-        "C Language": {
-            percent: 75,
-            color: '#cdc6c6',
-            icon: 'fab fa-cuttlefish'
-        },
-        Photoshop: {
-            percent: 60,
-            color: '#0f5367',
-            icon: 'fab fa-adobe'
-        },
-        Illustrator: {
-            percent: 60,
-            color: '#ed6c1f',
-            icon: 'fab fa-adobe'
-        },
-        Blender: {
-            percent: 50,
-            color: '#f86d20',
-            icon: 'fab fa-css3-alt'
-        },
-        Unity: {
-            percent: 30,
-            color: '#9428b2',
-            icon: 'fab fa-unity'
+        "HTML5 & CSS3": {
+            percent: 90,
+            color: '#e34f26',
+            icon: 'fab fa-html5'
         }
-    }
-
-
+    };
 
     return (
         <div className={classes.skills}>
@@ -97,7 +89,7 @@ const skills = props => {
                 frameworks={skillsData[item].frameworks}
             />) }
         </div>
-    )
-}
+    );
+};
 
 export default skills;
