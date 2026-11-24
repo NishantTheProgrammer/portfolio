@@ -1,314 +1,358 @@
 <script setup lang="ts">
 import NavBar from '@/components/NavBar.vue';
-</script>
+import type { Experience, Education, Skill } from '@/types';
 
-<script lang="ts">
-export default {
-  data() {
-    return {
-      experiences: [
-        {
-          company: "To The New (TTN)",
-          period: "Dec 2025 – Present",
-          role: "Senior Software Engineer",
-          description: "Technology consulting company providing digital transformation and software engineering solutions to global enterprises.",
-          highlights: [
-            "Developing backend services, designing REST APIs, and implementing microservice-based architectures for global enterprise clients.",
-            "TabCorp: Working on sports-related backend services using Node.js, contributing to the service-bff-sports application. Developed featured sports endpoints, defined API contracts, and enhanced backend functionalities for sports platform integrations."
-          ]
-        },
-        {
-          company: "Dhwani Rural Information Systems",
-          period: "Jan 2023 – Dec 2025",
-          role: "SDE-2 Full Stack",
-          description: "Technology-driven social impact venture that enables development sector organizations to track and monitor projects effectively.",
-          highlights: [
-            "Conducted technical interviews, mentored junior developers, developed REST APIs, and reviewed pull requests.",
-            "Indian Partner Network: Designed and developed a comprehensive full-stack NGO management platform with Node.js/Express backend and modern Angular frontend. Integrated Form.io dynamic assessments, SendGrid email automation with calendar synchronization, Amplitude tracking, dynamic CMS, and materialized views.",
-            "City Finance: Developed complex reactive forms, integrated GIS map boundaries, implemented Google Analytics, and built high-volume bulk upload services handling financial data for 4,000+ urban local bodies."
-          ]
-        },
-        {
-          company: "Max Vision Solutions Pvt. Ltd.",
-          period: "Mar 2021 – Dec 2022",
-          role: "Mobile Application Developer",
-          description: "Global web and mobile application engineering services company.",
-          highlights: [
-            "UI development, API integration, testing, deployment, and security implementation.",
-            "getlivecoach.com & mobile app: One-to-one video call coaching platform; integrated Stripe payment gateway, Twilio APIs for video, push notifications, and deep linking.",
-            "Link Locality: Social networking platform built with Ionic; implemented OTP verification, Google/Facebook login, geolocation, and social sharing.",
-            "pay.mesa-qr.com: Multi-vendor restaurant web application with Stripe split payments, QR code generation, and responsive layouts.",
-            "Kichi-Mall & In1Mall: E-commerce applications utilizing WordPress, WooCommerce REST API, Ionic, and Angular."
-          ]
-        }
-      ],
-      education: [
-        {
-          degree: "Master in Computer Applications (MCA)",
-          institution: "IGNOU",
-          year: "2023",
-          description: "Advanced coursework in distributed systems, database design, software engineering methodologies, and scalable application architectures."
-        },
-        {
-          degree: "Bachelor in Computer Application (BCA)",
-          institution: "IGNOU",
-          year: "2020",
-          description: "Foundational computer science degree in data structures, algorithms, object-oriented programming, and web technologies."
-        }
-      ],
-      skills: [
-        {
-          technology: 'Node.js',
-          percent: 95,
-          color: '#339933',
-          icon: 'fab fa-node-js',
-          frameworks: [
-            { title: 'Express.js', icon: 'fas fa-server', color: '#ffffff' }
-          ]
-        },
-        {
-          technology: 'TypeScript & JS',
-          percent: 95,
-          color: '#3178c6',
-          icon: 'fab fa-js-square',
-          frameworks: [
-            { title: 'React JS', icon: 'fab fa-react', color: '#15aabf' },
-            { title: 'Angular', icon: 'fab fa-angular', color: '#dd0031' },
-            { title: 'Vue JS', icon: 'fab fa-vuejs', color: '#35b741' }
-          ]
-        },
-        {
-          technology: 'Microservices',
-          percent: 90,
-          color: '#ffb400',
-          icon: 'fas fa-network-wired',
-          frameworks: [
-            { title: 'System Design', icon: 'fas fa-server', color: '#ffb400' }
-          ]
-        },
-        {
-          technology: 'Databases',
-          percent: 90,
-          color: '#47a248',
-          icon: 'fas fa-database',
-          frameworks: [
-            { title: 'SQL', icon: 'fas fa-database', color: '#336791' }
-          ]
-        },
-        {
-          technology: 'Gen AI & RAG',
-          percent: 85,
-          color: '#8a2be2',
-          icon: 'fas fa-brain',
-          frameworks: [
-            { title: 'Agentic AI', icon: 'fas fa-code', color: '#ba68c8' }
-          ]
-        },
-        {
-          technology: 'DevOps & Docker',
-          percent: 85,
-          color: '#2496ed',
-          icon: 'fab fa-docker',
-          frameworks: [
-            { title: 'Linux', icon: 'fab fa-linux', color: '#cf7a0a' },
-            { title: 'Git', icon: 'fab fa-git-alt', color: '#f05032' }
-          ]
-        },
-        {
-          technology: 'Tailwind & UI',
-          percent: 90,
-          color: '#38b2ac',
-          icon: 'fab fa-css3-alt',
-          frameworks: [
-            { title: 'Bootstrap', icon: 'fab fa-bootstrap', color: '#543b79' }
-          ]
-        },
-        {
-          technology: 'Python',
-          percent: 80,
-          color: '#4894c3',
-          icon: 'fab fa-python',
-          frameworks: [
-            { title: 'Django', icon: 'fab fa-dyalog', color: 'white' }
-          ]
-        }
-      ]
-    };
+const experiences: Experience[] = [
+  {
+    company: "To The New (TTN)",
+    period: "Dec 2025 – Present",
+    role: "Senior Software Engineer",
+    description: "Technology consulting company providing digital transformation and software engineering solutions to global enterprises.",
+    highlights: [
+      "Developing backend services, designing REST APIs, and implementing microservice-based solutions for enterprise systems.",
+      "TabCorp: Working on sports-related backend services using Node.js, contributing to the service-bff-sports application. Developed featured sports endpoints, defined API contracts, and enhanced backend functionalities for sports platform integrations."
+    ]
+  },
+  {
+    company: "Dhwani Rural Information Systems",
+    period: "Jan 2023 – Dec 2025",
+    role: "SDE-2 Full Stack",
+    description: "Technology-driven social impact venture enabling development sector organizations to track and monitor projects effectively via ICT/Tech solutions.",
+    highlights: [
+      "Conducted technical interviews, mentored junior developers, designed scalable REST APIs, and performed architectural pull request reviews.",
+      "Indian Partner Network: Designed and developed a comprehensive full-stack NGO management platform with Node.js/Express backend and modern Angular frontend. Integrated Form.io dynamic assessments, SendGrid email automation with calendar synchronization, Amplitude tracking, dynamic CMS, and materialized views.",
+      "City Finance: Developed complex reactive forms, integrated GIS map boundaries, implemented Google Analytics, and engineered high-volume bulk upload services managing financial data for 4,000+ urban local bodies across India."
+    ]
+  },
+  {
+    company: "Max Vision Solutions Pvt. Ltd.",
+    period: "Mar 2021 – Dec 2022",
+    role: "Mobile Application Developer",
+    description: "Global web and mobile application engineering services company delivering high-efficiency platforms.",
+    highlights: [
+      "UI development, API integration, testing, deployment, and security implementation.",
+      "getlivecoach.com & mobile app: One-to-one video call coaching platform; integrated Stripe payment gateway, Twilio APIs for real-time video sessions, mobile deep linking, and push notification systems.",
+      "Link Locality: Social networking platform built with Ionic; implemented OTP verification, Google and Facebook OAuth logins, geolocation, and social sharing.",
+      "pay.mesa-qr.com: Multi-vendor restaurant web application with Stripe split payments, QR code generation, and responsive layouts.",
+      "Kichi-Mall & In1Mall: E-commerce applications utilizing WordPress, WooCommerce REST API, Ionic, and Angular."
+    ]
   }
-};
+];
+
+const education: Education[] = [
+  {
+    degree: "Master in Computer Applications (MCA)",
+    institution: "Indira Gandhi National Open University (IGNOU)",
+    year: "2023",
+    description: "Advanced degree focusing on distributed systems architecture, database management systems, advanced software design, and engineering methodologies."
+  },
+  {
+    degree: "Bachelor in Computer Application (BCA)",
+    institution: "Indira Gandhi National Open University (IGNOU)",
+    year: "2020",
+    description: "Foundational computer science program covering algorithms, data structures, object-oriented programming, and modern web application development."
+  }
+];
+
+const skills: Skill[] = [
+  {
+    technology: 'Node.js',
+    percent: 95,
+    color: '#339933',
+    icon: ['fab', 'node-js'],
+    frameworks: [
+      { title: 'Express.js', icon: 'server', color: '#ffffff' }
+    ]
+  },
+  {
+    technology: 'TypeScript & JS',
+    percent: 95,
+    color: '#3178c6',
+    icon: ['fab', 'js-square'],
+    frameworks: [
+      { title: 'React JS', icon: ['fab', 'react'], color: '#15aabf' },
+      { title: 'Angular', icon: ['fab', 'angular'], color: '#dd0031' },
+      { title: 'Vue JS', icon: ['fab', 'vuejs'], color: '#35b741' }
+    ]
+  },
+  {
+    technology: 'Microservices',
+    percent: 90,
+    color: '#ffb400',
+    icon: 'network-wired',
+    frameworks: [
+      { title: 'REST APIs', icon: 'server', color: '#ffb400' }
+    ]
+  },
+  {
+    technology: 'Databases',
+    percent: 90,
+    color: '#47a248',
+    icon: 'database',
+    frameworks: [
+      { title: 'MongoDB & PostgreSQL', icon: 'database', color: '#336791' }
+    ]
+  },
+  {
+    technology: 'Gen AI & RAG',
+    percent: 85,
+    color: '#8a2be2',
+    icon: 'brain',
+    frameworks: [
+      { title: 'Agentic AI', icon: 'code', color: '#ba68c8' }
+    ]
+  },
+  {
+    technology: 'DevOps & Docker',
+    percent: 85,
+    color: '#2496ed',
+    icon: ['fab', 'docker'],
+    frameworks: [
+      { title: 'Linux', icon: ['fab', 'linux'], color: '#cf7a0a' },
+      { title: 'Git', icon: ['fab', 'git-alt'], color: '#f05032' }
+    ]
+  },
+  {
+    technology: 'Tailwind & UI',
+    percent: 90,
+    color: '#38b2ac',
+    icon: ['fab', 'css3-alt'],
+    frameworks: [
+      { title: 'Bootstrap', icon: ['fab', 'bootstrap'], color: '#543b79' }
+    ]
+  },
+  {
+    technology: 'Python',
+    percent: 80,
+    color: '#4894c3',
+    icon: ['fab', 'python'],
+    frameworks: [
+      { title: 'Django', icon: ['fab', 'dyalog'], color: 'white' }
+    ]
+  }
+];
 </script>
-
-<style>
-.skill {
-  background-color: #1d212299;
-  height: 320px;
-  width: 240px;
-  margin: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-radius: 8px;
-}
-
-.skill svg {
-  width: 150px;
-}
-
-svg circle {
-  fill: none;
-  stroke: yellow;
-  stroke-width: 10;
-  stroke-linecap: round;
-  transform: translate(5px, 5px);
-  stroke-dasharray: 220;
-  stroke-dashoffset: 220;
-}
-
-.skill .skillName {
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.skill .percent {
-  position: relative;
-  top: -90px;
-  font-size: 20px;
-}
-
-.skill .framework {
-  background-color: black;
-  border-radius: 20px;
-  font-size: 1.5em;
-  width: 80%;
-  margin: 10px;
-  display: flex;
-  justify-content: center;
-}
-
-.skill .framework i,
-.skill .framework svg {
-  margin: 8px;
-}
-
-.circle {
-  stroke-dasharray: 440;
-}
-</style>
 
 <template>
-  <NavBar></NavBar>
-  <main class="text-white">
-    <!-- About Header & Intro -->
-    <section class="px-4 sm:px-8 lg:px-16 xl:px-20 py-10 sm:py-16">
-      <h1 class="text-4xl md:text-5xl font-mono text-center">About <span class="text-emerald-400">Me</span></h1>
-      <p class="text-center text-gray-400 font-mono mt-3 max-w-2xl mx-auto">
-        Senior Software Engineer specializing in scalable backend microservices, modern reactive frontends, and robust system design.
-      </p>
+  <NavBar />
 
-      <!-- Personal Info Grid -->
-      <div class="bg-zinc-800 p-6 md:p-10 rounded-xl mt-10 max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 border border-zinc-700">
-        <div>
-          <span class="text-gray-400 font-mono text-xs uppercase tracking-wider">Role</span>
-          <p class="text-emerald-400 font-bold text-lg">Senior Software Engineer</p>
-        </div>
-        <div>
-          <span class="text-gray-400 font-mono text-xs uppercase tracking-wider">Current Company</span>
-          <p class="text-white font-bold text-lg">To The New (TTN)</p>
-        </div>
-        <div>
-          <span class="text-gray-400 font-mono text-xs uppercase tracking-wider">Experience</span>
-          <p class="text-white font-bold text-lg">6 Years</p>
-        </div>
-        <div>
-          <span class="text-gray-400 font-mono text-xs uppercase tracking-wider">Location</span>
-          <p class="text-white font-bold text-lg">Ashok Nagar, Delhi - 110093</p>
-        </div>
-        <div>
-          <span class="text-gray-400 font-mono text-xs uppercase tracking-wider">Education</span>
-          <p class="text-white font-bold text-lg">MCA (2023) | BCA (2020) - IGNOU</p>
-        </div>
-        <div>
-          <span class="text-gray-400 font-mono text-xs uppercase tracking-wider">Problem Solving</span>
-          <p class="text-amber-400 font-bold text-lg">500+ LeetCode | HackerRank 6★ Gold</p>
-        </div>
-      </div>
-    </section>
+  <main class="flex-1 py-12 md:py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-20">
 
-    <!-- Work Experience Section -->
-    <section class="px-4 sm:px-8 lg:px-16 xl:px-20 py-10">
-      <h2 class="text-3xl md:text-4xl font-mono text-center">Work <span class="text-emerald-400">Experience</span></h2>
-      <div class="flex flex-col gap-8 max-w-4xl mx-auto mt-10">
-        <div v-for="(exp, index) in experiences" :key="index"
-          class="bg-zinc-800 border-l-4 border-emerald-400 p-6 md:p-8 rounded-r-xl shadow-lg">
-          <div class="flex flex-col md:flex-row md:items-center justify-between gap-2">
-            <h3 class="text-2xl font-bold text-emerald-400 font-mono">{{ exp.company }}</h3>
-            <span class="text-sm text-gray-400 font-mono bg-zinc-900 px-3 py-1 rounded-full w-fit">{{ exp.period }}</span>
-          </div>
-          <h4 class="text-lg font-semibold text-white mt-2">{{ exp.role }}</h4>
-          <p class="text-sm text-gray-400 italic mt-1">{{ exp.description }}</p>
-          <ul class="list-disc list-inside mt-4 space-y-2 text-gray-300 text-sm leading-relaxed">
-            <li v-for="(item, hIdx) in exp.highlights" :key="hIdx">{{ item }}</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section class="px-4 sm:px-8 lg:px-16 xl:px-20 py-10">
-      <h2 class="text-3xl md:text-4xl font-mono text-center">Skills & <span class="text-emerald-400">Expertise</span></h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4 justify-items-center items-center gap-6 mt-10 max-w-6xl mx-auto">
-        <div v-for="skill in skills" :key="skill.technology"
-          class="bg-neutral-800 rounded-lg p-5 skill flex flex-col items-center border border-zinc-700">
-          <svg class="w-full h-auto">
-            <circle class="circle"
-              :style="{ strokeDashoffset: `calc(440 - (440 * ${skill.percent}) / 100)`, stroke: skill.color }" cx="70"
-              cy="70" r="70">
-            </circle>
-          </svg>
-          <span class="percent block text-center font-bold">{{ skill.percent }}%</span>
-          <p class="text-center skillName text-sm md:text-base">
-            <font-awesome-icon class="icon" :icon="skill.icon" />&nbsp; {{ skill.technology }}
+      <!-- About Header & Highlights Card -->
+      <section class="space-y-8">
+        <div class="text-center max-w-3xl mx-auto space-y-3">
+          <span class="text-xs uppercase font-mono tracking-widest text-emerald-400 font-bold">Profile Overview</span>
+          <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold font-mono text-white">About Me</h1>
+          <p class="text-gray-300 font-mono text-sm sm:text-base leading-relaxed">
+            Senior Software Engineer with 6 years of experience engineering high-throughput backend services, full-stack platforms, and microservices architecture.
           </p>
-          <div v-if="skill.frameworks && skill.frameworks.length" class="framework flex justify-center mt-2">
-            <font-awesome-icon v-for="framework in skill.frameworks" :key="framework.title"
-              :style="{ color: framework.color }" class="icon mx-1" :icon="framework.icon" />
+        </div>
+
+        <!-- Quick Info Grid -->
+        <div class="bg-zinc-800/80 border border-zinc-700/80 rounded-2xl p-6 sm:p-10 shadow-xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="bg-zinc-900/60 p-4 rounded-xl border border-zinc-700/50">
+            <span class="text-xs font-mono uppercase text-gray-400 tracking-wider">Current Role</span>
+            <p class="text-emerald-400 font-bold font-mono text-lg mt-1">Senior Software Engineer</p>
+            <p class="text-xs text-gray-400 font-mono">To The New (TTN)</p>
+          </div>
+          <div class="bg-zinc-900/60 p-4 rounded-xl border border-zinc-700/50">
+            <span class="text-xs font-mono uppercase text-gray-400 tracking-wider">Experience</span>
+            <p class="text-white font-bold font-mono text-lg mt-1">6 Years</p>
+            <p class="text-xs text-gray-400 font-mono">10+ Scalable Enterprise Apps</p>
+          </div>
+          <div class="bg-zinc-900/60 p-4 rounded-xl border border-zinc-700/50">
+            <span class="text-xs font-mono uppercase text-gray-400 tracking-wider">Location</span>
+            <p class="text-white font-bold font-mono text-lg mt-1">Delhi, India</p>
+            <p class="text-xs text-gray-400 font-mono">Ashok Nagar - 110093</p>
+          </div>
+          <div class="bg-zinc-900/60 p-4 rounded-xl border border-zinc-700/50">
+            <span class="text-xs font-mono uppercase text-gray-400 tracking-wider">Problem Solving</span>
+            <p class="text-amber-400 font-bold font-mono text-lg mt-1">500+ LeetCode Solved</p>
+            <p class="text-xs text-gray-400 font-mono">HackerRank 6th Star Gold Badge</p>
+          </div>
+          <div class="bg-zinc-900/60 p-4 rounded-xl border border-zinc-700/50">
+            <span class="text-xs font-mono uppercase text-gray-400 tracking-wider">Highest Education</span>
+            <p class="text-white font-bold font-mono text-lg mt-1">MCA (2023)</p>
+            <p class="text-xs text-gray-400 font-mono">IGNOU (Master of Computer Applications)</p>
+          </div>
+          <div class="bg-zinc-900/60 p-4 rounded-xl border border-zinc-700/50">
+            <span class="text-xs font-mono uppercase text-gray-400 tracking-wider">Direct Contact</span>
+            <p class="text-emerald-400 font-bold font-mono text-base mt-1 truncate">knishant113@gmail.com</p>
+            <p class="text-xs text-gray-400 font-mono">+91 7838716089</p>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Education Section -->
-    <section class="px-4 sm:px-8 lg:px-16 xl:px-20 py-10">
-      <h2 class="text-3xl md:text-4xl font-mono text-center">Formal <span class="text-emerald-400">Education</span></h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto mt-10">
-        <div v-for="(edu, idx) in education" :key="idx" class="bg-zinc-800 p-6 rounded-xl border border-zinc-700">
-          <span class="text-xs text-emerald-400 font-mono uppercase tracking-wider">{{ edu.year }}</span>
-          <h3 class="text-xl font-bold text-white mt-1">{{ edu.degree }}</h3>
-          <p class="text-amber-400 font-mono text-sm mt-1">{{ edu.institution }}</p>
-          <p class="text-sm text-gray-400 mt-3 text-justify">{{ edu.description }}</p>
+      <!-- Work Experience Timeline -->
+      <section class="space-y-10">
+        <div class="text-center max-w-2xl mx-auto space-y-2">
+          <span class="text-xs uppercase font-mono tracking-widest text-emerald-400 font-bold">Career Progression</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold font-mono text-white">Work Experience</h2>
         </div>
-      </div>
-    </section>
 
-    <!-- Problem Solving Badges & Links -->
-    <section class="px-4 sm:px-8 lg:px-16 xl:px-20 py-12 mb-10">
-      <div class="bg-zinc-900 border border-emerald-500/30 p-8 rounded-2xl max-w-4xl mx-auto text-center">
-        <h2 class="text-2xl md:text-3xl font-mono text-white">Problem Solving & Algorithms</h2>
-        <p class="text-gray-400 text-sm mt-2 max-w-xl mx-auto">
-          Over 500+ LeetCode problems solved across Data Structures & Algorithms, combined with a 6th Star Gold Badge on HackerRank.
-        </p>
-        <div class="flex flex-wrap justify-center gap-4 mt-6">
-          <a href="https://leetcode.com/NishantTheProgrammer/" target="_blank" rel="noopener noreferrer"
-            class="py-2.5 px-6 bg-amber-500 hover:bg-amber-400 text-black font-bold rounded-lg text-sm transition">
-            LeetCode Profile (500+ Solved)
-          </a>
-          <a href="https://www.hackerrank.com/NishantThePro" target="_blank" rel="noopener noreferrer"
-            class="py-2.5 px-6 border border-emerald-400 hover:bg-emerald-500/10 text-emerald-400 font-bold rounded-lg text-sm transition">
-            HackerRank 6★ Gold Badge
-          </a>
+        <div class="relative border-l-2 border-emerald-500/30 ml-4 sm:ml-8 md:ml-12 space-y-12">
+          <div
+            v-for="(exp, idx) in experiences"
+            :key="idx"
+            class="relative pl-6 sm:pl-10 group"
+          >
+            <!-- Timeline dot -->
+            <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-emerald-400 border-4 border-[#121417] group-hover:scale-125 transition-transform"></div>
+
+            <div class="bg-zinc-800/80 border border-zinc-700/70 hover:border-emerald-500/40 rounded-2xl p-6 sm:p-8 transition-all duration-300 shadow-xl space-y-4">
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-zinc-700/60 pb-4">
+                <div>
+                  <h3 class="text-xl sm:text-2xl font-bold font-mono text-emerald-400">{{ exp.company }}</h3>
+                  <p class="text-white font-semibold text-base mt-0.5">{{ exp.role }}</p>
+                </div>
+                <span class="inline-block px-3 py-1 rounded-full text-xs font-mono font-medium bg-zinc-900 text-gray-300 border border-zinc-700/60 w-fit">
+                  {{ exp.period }}
+                </span>
+              </div>
+
+              <p class="text-sm text-gray-400 italic font-mono">{{ exp.description }}</p>
+
+              <ul class="space-y-2.5 pt-1">
+                <li
+                  v-for="(item, hIdx) in exp.highlights"
+                  :key="hIdx"
+                  class="flex items-start gap-3 text-sm text-gray-300 font-mono leading-relaxed"
+                >
+                  <span class="text-emerald-400 mt-1 text-xs">▸</span>
+                  <span>{{ item }}</span>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <!-- Skills Matrix -->
+      <section class="space-y-10">
+        <div class="text-center max-w-2xl mx-auto space-y-2">
+          <span class="text-xs uppercase font-mono tracking-widest text-emerald-400 font-bold">Tech Stack</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold font-mono text-white">Skills & Competencies</h2>
+        </div>
+
+        <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
+          <div
+            v-for="skill in skills"
+            :key="skill.technology"
+            class="bg-zinc-800/80 border border-zinc-700/70 hover:border-emerald-500/50 rounded-2xl p-5 flex flex-col items-center justify-between text-center transition-all duration-300 shadow-lg hover:-translate-y-1"
+          >
+            <!-- Circular Progress Indicator -->
+            <div class="relative w-28 h-28 my-2">
+              <svg class="w-full h-full transform -rotate-90" viewBox="0 0 100 100">
+                <circle
+                  cx="50"
+                  cy="50"
+                  r="40"
+                  stroke="currentColor"
+                  stroke-width="8"
+                  class="text-zinc-900"
+                  fill="transparent"
+                />
+                <circle
+                  cx="50"
+                  cy="50"
+                  r="40"
+                  :stroke="skill.color"
+                  stroke-width="8"
+                  stroke-linecap="round"
+                  fill="transparent"
+                  :stroke-dasharray="251.2"
+                  :stroke-dashoffset="251.2 - (251.2 * skill.percent) / 100"
+                  class="transition-all duration-1000 ease-out"
+                />
+              </svg>
+              <div class="absolute inset-0 flex items-center justify-center font-mono font-bold text-lg text-white">
+                {{ skill.percent }}%
+              </div>
+            </div>
+
+            <!-- Skill Name -->
+            <div class="mt-2 space-y-1">
+              <p class="font-mono font-bold text-sm sm:text-base text-white flex items-center justify-center gap-2">
+                <font-awesome-icon :icon="skill.icon" />
+                <span>{{ skill.technology }}</span>
+              </p>
+              
+              <!-- Framework icons / pills -->
+              <div v-if="skill.frameworks?.length" class="flex items-center justify-center gap-2 pt-2">
+                <span
+                  v-for="framework in skill.frameworks"
+                  :key="framework.title"
+                  class="text-[11px] font-mono py-0.5 px-2 rounded bg-zinc-900 text-gray-300 border border-zinc-700"
+                >
+                  {{ framework.title }}
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Formal Education -->
+      <section class="space-y-10">
+        <div class="text-center max-w-2xl mx-auto space-y-2">
+          <span class="text-xs uppercase font-mono tracking-widest text-emerald-400 font-bold">Academic Foundation</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold font-mono text-white">Education</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+          <div
+            v-for="(edu, idx) in education"
+            :key="idx"
+            class="bg-zinc-800/80 border border-zinc-700/80 rounded-2xl p-6 sm:p-8 flex flex-col justify-between shadow-xl"
+          >
+            <div>
+              <span class="text-xs font-mono font-bold text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-2.5 py-1 rounded-full uppercase tracking-wider">
+                Graduated {{ edu.year }}
+              </span>
+              <h3 class="text-xl font-bold font-mono text-white mt-4">{{ edu.degree }}</h3>
+              <p class="text-amber-400 font-mono text-sm mt-1">{{ edu.institution }}</p>
+              <p class="text-sm text-gray-300 font-mono mt-4 leading-relaxed text-justify">
+                {{ edu.description }}
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Competitive Problem Solving Card -->
+      <section class="py-4">
+        <div class="bg-gradient-to-r from-zinc-900 via-zinc-800 to-zinc-900 border border-amber-500/30 rounded-3xl p-8 sm:p-12 text-center max-w-4xl mx-auto shadow-2xl space-y-6">
+          <div class="inline-flex p-3 rounded-2xl bg-amber-500/10 text-amber-400 text-2xl">
+            <font-awesome-icon icon="code" />
+          </div>
+          
+          <h2 class="text-2xl sm:text-3xl font-extrabold font-mono text-white">Problem Solving & Algorithms</h2>
+          <p class="text-gray-300 font-mono text-sm sm:text-base max-w-2xl mx-auto leading-relaxed">
+            Consistently sharpening algorithmic logic and system design intuition. Solved over 500+ problems on LeetCode and attained HackerRank's highest 6th Star Gold Badge in Problem Solving.
+          </p>
+
+          <div class="flex flex-wrap justify-center gap-4 pt-2">
+            <a
+              href="https://leetcode.com/NishantTheProgrammer/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-amber-500 hover:bg-amber-400 text-black font-bold text-sm tracking-wide transition-all shadow-lg"
+            >
+              <span>View LeetCode (500+ Solved)</span>
+            </a>
+            <a
+              href="https://www.hackerrank.com/NishantThePro"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-zinc-900 hover:bg-zinc-700 text-emerald-400 font-bold text-sm border border-emerald-500/40 transition-colors"
+            >
+              <span>HackerRank 6★ Gold Profile</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+    </div>
   </main>
 </template>

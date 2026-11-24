@@ -1,45 +1,46 @@
-<script lang="ts">
+<script setup lang="ts">
+import { ref, onMounted, onUnmounted } from "vue";
 
-export default {
-    data() {
-        return {
-            roles: [
-                "Senior Software Engineer",
-                "Full Stack Developer",
-                "Backend Engineer",
-                "Microservices Architect",
-                "Problem Solver (500+ LC)",
-            ],
-            role: 'Senior Software Engineer',
-            write: false,
-            selected: 0
-        }
-    },
-    mounted() {
-        setInterval(() => {
-            if (!this.write) {
-                if (this.role.length !== 0) {
-                    this.role = this.role.slice(0, this.role.length - 1);
-                }
-                else {
-                    this.selected = (this.selected + 1) % this.roles.length;
-                    this.write = true;
-                }
-            }
-            else {
-                if (this.role !== this.roles[this.selected]) {
-                    this.role = this.roles[this.selected].slice(0, this.role.length + 1);
-                }
-                else {
-                    this.write = false;
-                }
-            }
-        }, 100);
+const roles = [
+  "Senior Software Engineer",
+  "Full Stack Developer",
+  "Backend Engineer",
+  "Microservices Architect",
+  "Problem Solver (500+ LC)",
+];
+
+const currentRole = ref("Senior Software Engineer");
+let selectedIdx = 0;
+let isDeleting = false;
+let timer: ReturnType<typeof setInterval> | null = null;
+
+onMounted(() => {
+  timer = setInterval(() => {
+    const fullText = roles[selectedIdx];
+    if (!isDeleting) {
+      if (currentRole.value.length < fullText.length) {
+        currentRole.value = fullText.slice(0, currentRole.value.length + 1);
+      } else {
+        isDeleting = true;
+      }
+    } else {
+      if (currentRole.value.length > 0) {
+        currentRole.value = currentRole.value.slice(0, currentRole.value.length - 1);
+      } else {
+        isDeleting = false;
+        selectedIdx = (selectedIdx + 1) % roles.length;
+      }
     }
-}
+  }, 90);
+});
 
+onUnmounted(() => {
+  if (timer) clearInterval(timer);
+});
 </script>
 
 <template>
-    <span class="text-black py-1 px-3 rounded-md bg-green-400">{{ role }}</span>
+  <span class="inline-flex items-center text-xs sm:text-sm font-mono font-bold py-1.5 px-3 rounded-md bg-emerald-400 text-black shadow-sm tracking-wide">
+    {{ currentRole }}<span class="animate-pulse ml-0.5 font-normal">|</span>
+  </span>
 </template>
