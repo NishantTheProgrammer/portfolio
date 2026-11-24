@@ -1,20 +1,20 @@
 const { Component } = require("react");
 
-
 class Role extends Component {
     state = {
-        role: 'Programmer',
+        role: 'Senior Software Engineer',
         write: false,
         selected: 0
     }
     componentDidMount() {
         const roles = [
-            "Programmer",
-            "React Dev",
-            "Django Dev",
-            "Freelancer",
+            "Senior Software Engineer",
+            "Full Stack Developer",
+            "Backend Engineer",
+            "System Designer",
+            "Problem Solver"
         ];
-        setInterval(() => {
+        this.interval = setInterval(() => {
             if(!this.state.write) {
                 if(this.state.role.length !== 0) {
                     this.setState(prev => ({role: prev.role.slice(0, prev.role.length - 1)}));
@@ -34,6 +34,9 @@ class Role extends Component {
                 }
             }
         }, 100);
+    }
+    componentWillUnmount() {
+        if (this.interval) clearInterval(this.interval);
     }
     render() { return <span style={{color: '#ffb400'}} id="role">{this.state.role}</span>; }
 }
