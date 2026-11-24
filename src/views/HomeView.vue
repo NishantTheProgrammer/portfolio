@@ -54,7 +54,7 @@ const { projects } = useProjectsStore();
               </RouterLink>
 
               <a
-                href="https://www.linkedin.com/in/nishant"
+                href="https://www.linkedin.com/in/nishanttheprogrammer"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="inline-flex items-center gap-2 px-4 py-3 rounded-xl bg-zinc-900 hover:bg-zinc-800 text-blue-400 border border-zinc-800 text-sm font-semibold transition-colors"
@@ -266,7 +266,7 @@ const { projects } = useProjectsStore();
           <p>© 2026 Nishant (NishantTheProgrammer). Built with Vue 3, Vite & Tailwind CSS.</p>
           <div class="flex items-center gap-6">
             <a href="https://github.com/NishantTheProgrammer" target="_blank" class="hover:text-white transition-colors">GitHub</a>
-            <a href="https://www.linkedin.com/in/nishant" target="_blank" class="hover:text-white transition-colors">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/nishanttheprogrammer" target="_blank" class="hover:text-white transition-colors">LinkedIn</a>
             <a href="https://leetcode.com/NishantTheProgrammer/" target="_blank" class="hover:text-white transition-colors">LeetCode</a>
           </div>
         </div>

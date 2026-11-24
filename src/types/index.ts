@@ -36,3 +36,4 @@ export interface Skill {
   icon: string | string[];
   frameworks?: SkillFramework[];
 }
+

@@ -69,7 +69,7 @@ const closeMenu = () => {
             <font-awesome-icon :icon="['fab', 'github']" class="text-lg" />
           </a>
           <a
-            href="https://www.linkedin.com/in/nishant"
+            href="https://www.linkedin.com/in/nishanttheprogrammer"
             target="_blank"
             rel="noopener noreferrer"
             class="text-gray-400 hover:text-blue-400 transition-colors"
@@ -160,7 +160,7 @@ const closeMenu = () => {
             <a href="https://github.com/NishantTheProgrammer" target="_blank" class="text-gray-400 hover:text-white text-lg">
               <font-awesome-icon :icon="['fab', 'github']" />
             </a>
-            <a href="https://www.linkedin.com/in/nishant" target="_blank" class="text-gray-400 hover:text-blue-400 text-lg">
+            <a href="https://www.linkedin.com/in/nishanttheprogrammer" target="_blank" class="text-gray-400 hover:text-blue-400 text-lg">
               <font-awesome-icon :icon="['fab', 'linkedin']" />
             </a>
             <a href="https://leetcode.com/NishantTheProgrammer/" target="_blank" class="text-gray-400 hover:text-amber-400 text-lg">
