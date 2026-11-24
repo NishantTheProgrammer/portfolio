@@ -1,144 +1,70 @@
-import { ref, computed } from "vue";
 import { defineStore } from "pinia";
 
 export const useProjectsStore = defineStore("project", () => {
   const projects = [
     {
+      title: 'Indian Partner Network',
+      description: "Comprehensive full-stack NGO management platform with Node.js/Express backend and modern Angular frontend. Integrated Form.io dynamic assessments, SendGrid email automation with calendar synchronization, Amplitude analytics, dynamic CMS, and materialized views.",
+      technologies: ['node.js', 'express', 'angular', 'form.io', 'sendgrid', 'amplitude'],
+      hosted: 'https://nishanttheprogrammer.com'
+    },
+    {
+      title: 'City Finance Platform',
+      description: "Financial tracking and reporting platform handling data for 4,000+ urban local bodies across India. Developed complex reactive forms, integrated GIS map boundaries, implemented Google Analytics, and engineered bulk data upload services.",
+      technologies: ['angular', 'node.js', 'gis-maps', 'reactive-forms'],
+      hosted: 'https://cityfinance.in/'
+    },
+    {
+      title: 'Shoe Shop (E-Commerce)',
+      description: "Developed a mid-level E-Commerce web application in Next.JS for an international client, implementing fast server-side rendering, catalog filtering, cart workflows, and responsive modern UI.",
+      technologies: ['next.js', 'react', 'tailwind', 'rest-api'],
+      sourceCode: 'https://github.com/NishantTheProgrammer'
+    },
+    {
+      title: 'getlivecoach.com & Mobile App',
+      description: "One-to-one video call coaching platform. Integrated Stripe payment gateway, Twilio APIs for real-time video sessions, mobile deep linking, and push notification systems.",
+      technologies: ['react', 'ionic', 'stripe', 'twilio', 'rest-api'],
+      hosted: 'https://getlivecoach.com'
+    },
+    {
+      title: 'pay.mesa-qr.com',
+      description: "Multi-vendor restaurant contactless ordering web application, incorporating Stripe split payment processing, dynamic QR code generation, and responsive layouts.",
+      technologies: ['node.js', 'stripe', 'qr-code', 'responsive-web'],
+      hosted: 'https://pay.mesa-qr.com'
+    },
+    {
+      title: 'SkillsAkhada',
+      description: "Gaming tournament platform built with Flutter, React, and Node.js REST APIs for tournament bracket management, player scoring, and team matchmaking.",
+      technologies: ['flutter', 'react', 'node.js'],
+      sourceCode: 'https://github.com/NishantTheProgrammer'
+    },
+    {
+      title: 'City Bus Management System',
+      description: "Comprehensive transit and fleet management platform for tracking bus schedules, routes, and operational status using Django REST APIs and Vue.js.",
+      technologies: ['django', 'vue.js', 'python', 'mysql'],
+      sourceCode: 'https://github.com/NishantTheProgrammer/BusManagementSystem'
+    },
+    {
       title: 'ChatThings',
-      media: {
-        type: 'video',                                                   // ['youtube', 'video', 'img']
-        link: './Media/chatThings.mp4'
-      },
-      description: "platform designed to bring people together! It's a social hub where connections flourish through chats, shared music experiences, and the joy of making new friends. Dive into a world where posting, reacting, and commenting create vibrant interactions. Share your stories, play engaging games like KBC and tic-tac-toe, and let the good times roll!",
-      sourceCode: 'https://github.com/NishantTheProgrammer/ChatThings',
-      technologies: ['django', 'react', 'mysql']
+      description: "Social media platform where connections flourish through chats, shared music experiences, and multiplayer games with real-time WebSockets.",
+      technologies: ['django', 'react', 'mysql'],
+      sourceCode: 'https://github.com/NishantTheProgrammer/ChatThings'
     },
     {
       title: 'WebDraw',
-      media: {
-        type: 'youtube',                                                   // ['youtube', 'video', 'img']
-        link: 'https://www.youtube.com/embed/sb9HfMbqmmM'
-      },
-      description: 'WebDraw is web based drawing tool made with JavaScript (vue.js) which contain all the features related to drawing',
+      description: 'Web-based drawing tool made with JavaScript (Vue.js) containing rich canvas controls, layering, and instant export capabilities.',
+      technologies: ['vue', 'javascript', 'html5'],
       sourceCode: 'https://github.com/NishantTheProgrammer/WebDraw/',
-      hosted: 'https://nishanttheprogrammer.github.io/WebDraw/',
-      technologies: ['vue']
+      hosted: 'https://nishanttheprogrammer.github.io/WebDraw/'
     },
     {
       title: 'ResumeBuilder',
-      media: {
-        type: 'video',                                                   // ['youtube', 'video', 'img']
-        link: './Media/ResumeBuilder.mp4'
-      },
-      description: "It's a react application for build your resume on the web, which will container some pre made template",
+      description: "Interactive React web application for building professional, customizable resumes with real-time preview and export templates.",
+      technologies: ['react', 'css'],
       sourceCode: 'https://github.com/NishantTheProgrammer/ResumeBuilder',
-      hosted: 'https://resumebuilder.nishanttheprogrammer.com/',
-      technologies: ['react']
-    },
-    {
-      title: '1GamerPro | Esprots web app',
-      media: {
-        type: 'video',                                                   // ['youtube', 'video', 'img']
-        link: './Media/1GamerPro.mp4'
-      },
-      description: 'This is a Laravel website an eSports platform for tournaments organizers, their participants and their fans.',
-      sourceCode: 'https://github.com/NishantTheProgrammer/1GamerPro',
-      technologies: ['laravel', 'mysql']
-    },
-    {
-      title: 'Bus Management System',
-      media: {
-        type: 'youtube',                                                   // ['youtube', 'video', 'img']
-        link: 'https://www.youtube.com/embed/W0VFvyU7R64'
-      },
-      description: "This is a java based web application to manage actions related to Bus and it's transport",
-      sourceCode: 'https://github.com/NishantTheProgrammer/BusManagementSystem',
-      technologies: ['java', 'jsp', 'apache', 'mysql']
-    },
-    {
-      title: 'ATMsimulator',
-      media: {
-        type: 'youtube',                                                   // ['youtube', 'video', 'img']
-        link: 'https://www.youtube.com/embed/025lPzicWus'
-      },
-      description: "This is a web based project to simulate and teach children and other peoples to know how actual ATM machine works",
-      sourceCode: 'https://github.com/NishantTheProgrammer/ATMsimulator',
-      technologies: ['css']
-    },
-    {
-      title: 'BubbleBurst',
-      media: {
-        type: 'video',                                                   // ['youtube', 'video', 'img']
-        link: './Media/BubbleBurst.mp4'
-      },
-      description: "This is a multiplayer PC game made with Vue.js for front end and Laravel (PHP) is for back and DB MySQL",
-      sourceCode: 'https://github.com/NishantTheProgrammer/BubbleBurst',
-      hosted: 'https://nishanttheprogrammer.github.io/BubbleBurst/',
-      technologies: ['html', 'css', 'javascript']
-    },
-    {
-      title: 'Save The Queen | 2-d shooting',
-      media: {
-        type: 'youtube',                                                   // ['youtube', 'video', 'img']
-        link: 'https://www.youtube.com/embed/hkgdq0Igvdo'
-      },
-      description: "Here enemies will spawn at a random location and trying to kill the queen. We've to save the Queen",
-      sourceCode: 'https://github.com/NishantTheProgrammer/SaveTheQueen',
-      technologies: ['python', 'pygame']
-    },
-    {
-      title: 'Voice Calculator',
-      media: {
-        type: 'video',                                                   // ['youtube', 'video', 'img']
-        link: './Media/voiceCal.mp4'
-      },
-      description: "A simple calculator operated by voice commands made with python",
-      sourceCode: 'https://github.com/NishantTheProgrammer/voiceCalculator',
-      technologies: ['python']
-    },
-    {
-      title: 'ExperimentsWith{Code}',
-      media: {
-        type: 'youtube',                                                   // ['youtube', 'video', 'img']
-        link: 'https://www.youtube.com/embed/7gQcsYpdWA4'
-      },
-      description: "A Landing page, login form, registration form and a home page this design was a challenge by my friend Himanshu",
-      sourceCode: 'https://github.com/NishantTheProgrammer/ExperimentsWithCode',
-      technologies: ['html', 'css', 'javascript']
-    },
-    {
-      title: 'Facebook Online Notifier',
-      media: {
-        type: 'youtube',                                                   // ['youtube', 'video', 'img']
-        link: 'https://www.youtube.com/embed/wAS8c_BPilY'
-      },
-      description: "This is a python web automation tool made with selenium to inform me when somebody is online",
-      sourceCode: 'https://github.com/NishantTheProgrammer/WebAutomation/blob/master/facebookNotifier.py',
-      technologies: ['selenium']
-    },
-    {
-      title: 'Corona Alerts',
-      media: {
-        type: 'video',                                                   // ['youtube', 'video', 'img']
-        link: './Media/corona.mp4'
-      },
-      description: "The repository is for alerting peoples through WhatsApp for corona updates interested counties (Infected Peoples and deaths) #StayAtHome",
-      sourceCode: 'https://github.com/NishantTheProgrammer/CoronaAlerts',
-      technologies: ['flask', 'pythonanywhere']
-    },
-    {
-      title: 'I Card Generator',
-      media: {
-        type: 'video',                                                   // ['youtube', 'video', 'img']
-        link: './Media/iCardGeneratior.mp4'
-      },
-      description: "JavaScript code to create simple I card dynamically",
-      sourceCode: 'https://github.com/NishantTheProgrammer/iCardGenerator/',
-      hosted: 'https://nishanttheprogrammer.github.io/iCardGenerator/',
-      technologies: ['react']
-    },
+      hosted: 'https://resumebuilder.nishanttheprogrammer.com/'
+    }
   ];
-
 
   return { projects };
 });

@@ -4,16 +4,13 @@ export default {
     data() {
         return {
             roles: [
-                "Programmer",
-                "Freelancer",
-                "Node",
-                "Express",
-                "Mongo",
-                "Angular",
-                "React",
-                "Vue",
+                "Senior Software Engineer",
+                "Full Stack Developer",
+                "Backend Engineer",
+                "Microservices Architect",
+                "Problem Solver (500+ LC)",
             ],
-            role: 'Programmer',
+            role: 'Senior Software Engineer',
             write: false,
             selected: 0
         }
@@ -25,8 +22,7 @@ export default {
                     this.role = this.role.slice(0, this.role.length - 1);
                 }
                 else {
-                    
-                    this.selected =  (this.selected + 1) % this.roles.length;
+                    this.selected = (this.selected + 1) % this.roles.length;
                     this.write = true;
                 }
             }
@@ -42,9 +38,7 @@ export default {
     }
 }
 
-
 </script>
-
 
 <template>
     <span class="text-black py-1 px-3 rounded-md bg-green-400">{{ role }}</span>
