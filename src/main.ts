@@ -4,8 +4,19 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import ToastPlugin from 'vue-toast-notification';
 
-import { faAddressCard, faClipboardQuestion, faDatabase, faHome, faListCheck, faPhone, faBrain, faServer, faNetworkWired, faCode } from "@fortawesome/free-solid-svg-icons";
-import { faBootstrap, faCss3, faCss3Alt, faCuttlefish, faDyalog, faGithub, faHtml5, faInstagram, faJava, faJsSquare, faLaravel, faLinkedin, faLinux, faPhp, faPython, faReact, faUnity, faVuejs, faWhatsapp, faNodeJs, faAngular, faDocker, faGitAlt } from "@fortawesome/free-brands-svg-icons";
+import {
+  faAddressCard, faClipboardQuestion, faDatabase, faHome, 
+  faListCheck, faPhone, faBrain, faServer, faNetworkWired, 
+  faCode, faLayerGroup, faVial, faRobot, faSitemap, faTerminal
+} from "@fortawesome/free-solid-svg-icons";
+
+import {
+  faBootstrap, faCss3, faCss3Alt, faCuttlefish, faDyalog, 
+  faGithub, faHtml5, faInstagram, faJava, faJsSquare, 
+  faLaravel, faLinkedin, faLinux, faPhp, faPython, 
+  faReact, faUnity, faVuejs, faWhatsapp, faNodeJs, 
+  faAngular, faDocker, faGitAlt
+} from "@fortawesome/free-brands-svg-icons";
 
 import App from "./App.vue";
 import router from "./router";
@@ -17,7 +28,8 @@ library.add(
   faClipboardQuestion, faListCheck, faHtml5, faCss3Alt, faJsSquare, faReact, 
   faVuejs, faPython, faDyalog, faDatabase, faLinux, faPhp, faLaravel, 
   faBootstrap, faJava, faCuttlefish, faUnity, faNodeJs, faAngular, 
-  faDocker, faGitAlt, faBrain, faServer, faNetworkWired, faCode
+  faDocker, faGitAlt, faBrain, faServer, faNetworkWired, faCode,
+  faLayerGroup, faVial, faRobot, faSitemap, faTerminal
 );
 
 const app = createApp(App);

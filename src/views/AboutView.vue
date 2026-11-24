@@ -56,78 +56,86 @@ const education: Education[] = [
 
 const skills: Skill[] = [
   {
-    technology: 'Node.js',
+    technology: 'Node.js & Next.js',
     percent: 95,
     color: '#339933',
     icon: ['fab', 'node-js'],
     frameworks: [
-      { title: 'Express.js', icon: 'server', color: '#ffffff' }
+      { title: 'Express.js', icon: 'server', color: '#ffffff' },
+      { title: 'Next.js', icon: 'server', color: '#38b2ac' }
     ]
   },
   {
-    technology: 'TypeScript & JS',
+    technology: 'React, Angular & Vue',
     percent: 95,
     color: '#3178c6',
-    icon: ['fab', 'js-square'],
+    icon: ['fab', 'react'],
     frameworks: [
-      { title: 'React JS', icon: ['fab', 'react'], color: '#15aabf' },
       { title: 'Angular', icon: ['fab', 'angular'], color: '#dd0031' },
-      { title: 'Vue JS', icon: ['fab', 'vuejs'], color: '#35b741' }
+      { title: 'Vue.js', icon: ['fab', 'vuejs'], color: '#35b741' },
+      { title: 'TypeScript', icon: ['fab', 'js-square'], color: '#3178c6' }
     ]
   },
   {
-    technology: 'Microservices',
+    technology: 'Microservices & System Design',
     percent: 90,
     color: '#ffb400',
-    icon: 'network-wired',
+    icon: 'sitemap',
     frameworks: [
-      { title: 'REST APIs', icon: 'server', color: '#ffb400' }
+      { title: 'System Design', icon: 'network-wired', color: '#ffb400' },
+      { title: 'REST APIs', icon: 'server', color: '#ffffff' }
     ]
   },
   {
-    technology: 'Databases',
-    percent: 90,
-    color: '#47a248',
-    icon: 'database',
-    frameworks: [
-      { title: 'MongoDB & PostgreSQL', icon: 'database', color: '#336791' }
-    ]
-  },
-  {
-    technology: 'Gen AI & RAG',
+    technology: 'Gen AI, RAG & LangGraph',
     percent: 85,
     color: '#8a2be2',
     icon: 'brain',
     frameworks: [
-      { title: 'Agentic AI', icon: 'code', color: '#ba68c8' }
+      { title: 'Agentic AI', icon: 'robot', color: '#ba68c8' },
+      { title: 'LangGraph', icon: 'code', color: '#81c784' }
     ]
   },
   {
-    technology: 'DevOps & Docker',
+    technology: 'MongoDB, PostgreSQL & MySQL',
+    percent: 90,
+    color: '#47a248',
+    icon: 'database',
+    frameworks: [
+      { title: 'PostgreSQL', icon: 'database', color: '#336791' },
+      { title: 'MySQL', icon: 'database', color: '#4479a1' }
+    ]
+  },
+  {
+    technology: 'HTML, CSS, JS & TS',
+    percent: 95,
+    color: '#f0d91d',
+    icon: ['fab', 'js-square'],
+    frameworks: [
+      { title: 'HTML5', icon: ['fab', 'html5'], color: '#de4b25' },
+      { title: 'CSS3', icon: ['fab', 'css3-alt'], color: '#3596d0' }
+    ]
+  },
+  {
+    technology: 'Tailwind, Material UI, Bootstrap',
+    percent: 90,
+    color: '#38b2ac',
+    icon: ['fab', 'css3-alt'],
+    frameworks: [
+      { title: 'Tailwind CSS', icon: ['fab', 'css3'], color: '#38b2ac' },
+      { title: 'Bootstrap', icon: ['fab', 'bootstrap'], color: '#563d7c' },
+      { title: 'Material UI', icon: 'layer-group', color: '#0081cb' }
+    ]
+  },
+  {
+    technology: 'Linux, Docker, Git & Jest',
     percent: 85,
     color: '#2496ed',
     icon: ['fab', 'docker'],
     frameworks: [
       { title: 'Linux', icon: ['fab', 'linux'], color: '#cf7a0a' },
-      { title: 'Git', icon: ['fab', 'git-alt'], color: '#f05032' }
-    ]
-  },
-  {
-    technology: 'Tailwind & UI',
-    percent: 90,
-    color: '#38b2ac',
-    icon: ['fab', 'css3-alt'],
-    frameworks: [
-      { title: 'Bootstrap', icon: ['fab', 'bootstrap'], color: '#543b79' }
-    ]
-  },
-  {
-    technology: 'Python',
-    percent: 80,
-    color: '#4894c3',
-    icon: ['fab', 'python'],
-    frameworks: [
-      { title: 'Django', icon: ['fab', 'dyalog'], color: 'white' }
+      { title: 'Git', icon: ['fab', 'git-alt'], color: '#f05032' },
+      { title: 'Jest', icon: 'vial', color: '#c21325' }
     ]
   }
 ];
@@ -231,15 +239,15 @@ const skills: Skill[] = [
       <!-- Skills Matrix -->
       <section class="space-y-10">
         <div class="text-center max-w-2xl mx-auto space-y-2">
-          <span class="text-xs uppercase font-mono tracking-widest text-emerald-400 font-bold">Tech Stack</span>
-          <h2 class="text-3xl sm:text-4xl font-extrabold font-mono text-white">Skills & Competencies</h2>
+          <span class="text-xs uppercase font-mono tracking-widest text-emerald-400 font-bold">Skills From Resume</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold font-mono text-white">Skills & Production Expertise</h2>
         </div>
 
-        <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
           <div
             v-for="skill in skills"
             :key="skill.technology"
-            class="bg-zinc-800/80 border border-zinc-700/70 hover:border-emerald-500/50 rounded-2xl p-5 flex flex-col items-center justify-between text-center transition-all duration-300 shadow-lg hover:-translate-y-1"
+            class="bg-zinc-800/80 border border-zinc-700/70 hover:border-emerald-500/50 rounded-2xl p-6 flex flex-col items-center justify-between text-center transition-all duration-300 shadow-lg hover:-translate-y-1"
           >
             <!-- Circular Progress Indicator -->
             <div class="relative w-28 h-28 my-2">
@@ -272,14 +280,14 @@ const skills: Skill[] = [
             </div>
 
             <!-- Skill Name -->
-            <div class="mt-2 space-y-1">
+            <div class="mt-2 space-y-1 w-full">
               <p class="font-mono font-bold text-sm sm:text-base text-white flex items-center justify-center gap-2">
                 <font-awesome-icon :icon="skill.icon" />
                 <span>{{ skill.technology }}</span>
               </p>
               
               <!-- Framework icons / pills -->
-              <div v-if="skill.frameworks?.length" class="flex items-center justify-center gap-2 pt-2">
+              <div v-if="skill.frameworks?.length" class="flex flex-wrap items-center justify-center gap-1.5 pt-2">
                 <span
                   v-for="framework in skill.frameworks"
                   :key="framework.title"
@@ -342,7 +350,7 @@ const skills: Skill[] = [
               <span>View LeetCode (500+ Solved)</span>
             </a>
             <a
-              href="https://www.hackerrank.com/NishantThePro"
+              href="https://www.hackerrank.com/profile/NishantThePro"
               target="_blank"
               rel="noopener noreferrer"
               class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-zinc-900 hover:bg-zinc-700 text-emerald-400 font-bold text-sm border border-emerald-500/40 transition-colors"
