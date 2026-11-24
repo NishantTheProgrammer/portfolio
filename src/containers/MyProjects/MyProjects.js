@@ -1,4 +1,3 @@
-import { Fragment } from "react";
 import classes from './MyProjects.module.css';
 import Projects from '../../components/Projects/Projects';
 
